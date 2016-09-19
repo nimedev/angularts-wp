@@ -33,7 +33,7 @@ npm install
 
 - Environment for server: `NODE_ENV`='development'
 - Webapplication server: `ANGULARTS_WP_HOST`=localIP and `ANGULARTS_WP_PORT`=3000
-- API url: `ANGULARTS_WP_API_HOST`=localIP and `ANGULARTS_WP_API_PORT`=3000
+- API url: `ANGULARTS_WP_API_HOST`=localIP and `ANGULARTS_WP_API_PORT`=8080
 
 To change any of this variables:
 

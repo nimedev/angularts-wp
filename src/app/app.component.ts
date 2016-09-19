@@ -36,7 +36,7 @@ export class AppController {
    */
   $onInit() {
     // Log constants object
-    this.$log.debug('Config object', this.constants)
+    this.$log.debug('Constants object', this.constants)
   }
 
   /**

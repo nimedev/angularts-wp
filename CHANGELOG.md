@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.2] - 2012-09-18
+
+### Fixed
+- Fix environment variables in README.md.
+
+
 ## [1.0.1] - 2012-09-18
 
 ### Fixed
