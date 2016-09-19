@@ -1,0 +1,47 @@
+/**
+ * Include here all modules (.css files) that need the app
+ */
+
+/* Libraries
+   ========================================================================== */
+
+@import "./settings";
+@import "niduscss-lib-mixins";
+
+/* Base styles
+   ========================================================================== */
+
+@import "niduscss-base";
+
+/* Niduscss elements
+   ========================================================================== */
+
+@import "niduscss-elements-form";
+@import "niduscss-elements-link";
+@import "niduscss-elements-typography";
+
+/* Niduscss components
+   ========================================================================== */
+
+@import "niduscss-components-button";
+@import "niduscss-components-divider";
+@import "niduscss-components-icon-button";
+
+/* Niduscss material components
+   ========================================================================== */
+
+@import "niduscss-material-icons";
+
+/* Niduscss utilities
+   ========================================================================== */
+
+@import "niduscss-utils-align";
+@import "niduscss-utils-buttons";
+@import "niduscss-utils-color";
+@import "niduscss-utils-flex";
+@import "niduscss-utils-shadow";
+@import "niduscss-utils-state";
+@import "niduscss-utils-text";
+
+/* Shared styles
+   ========================================================================== */

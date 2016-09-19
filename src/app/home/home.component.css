@@ -1,0 +1,30 @@
+/** Home component (ats-home in the DOM) */
+
+/* Root component selector
+   ========================================================================== */
+
+ats-home {
+  /* Box-model */
+  display: block;
+  padding: 1rem;
+}
+
+/* Component inner classes
+   ========================================================================== */
+
+.Home-title {
+  /* Typography */
+  text-align: center;
+}
+
+.Home-languages {
+  /* Box-model */
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+
+  .Button {
+    /* Box-model */
+    margin-left: 0.5rem;
+  }
+}

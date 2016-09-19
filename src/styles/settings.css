@@ -1,0 +1,127 @@
+/** Settings for all app */
+
+/* Custom properties
+   ========================================================================== */
+
+:root {
+  /* Base styles */
+  --App-background: #f5f5f5;
+  --App-textcolor: #262626;
+  --App-basefont: Lato, Helvetica, "Roboto Slab", "Droid Serif", "Segoe UI Bold", sans-serif;
+  --App-backdrop: rgba(33, 33, 33, 0.48);
+  --App-backdrop-white: rgba(224, 224, 224, 0.85);
+
+  /* Layout */
+  --App-pagemaxwidth: 60rem;
+  --App-gutterwidth: 1rem;
+  --App-xs-gutterwidth: 0.5rem;
+
+  /* z-layers */
+  --App-zl-goku: 9001;
+  --App-zl-shoryuken: 8000;
+  --App-zl-default: 1;
+  --App-zl-below: -1;
+  --App-zl-bottomless-pit: -9000;
+
+  /* Font sizes */
+  --App-fs-xxsmall: 0.625rem;
+  --App-fs-xsmall: 0.75rem;
+  --App-fs-small: 0.875rem;
+  --App-fs-normal: 1rem;
+  --App-fs-medium: 1.25rem;
+  --App-fs-big: 1.5rem;
+  --App-fs-huge: 2.125rem;
+  --App-fs-extreme: 2.8125rem;
+  --App-fs-xextreme: 3.5rem;
+
+  /**
+    * Material themming
+    * Default material shadows:
+    * - Primary and warning colors: (500, 300, 800 and A100)
+    * - Accent colors: (A200, A100, A400 and A700)
+    * Use: choose a palette for primary, accent and warn category then
+    * use a map to set de shadows (default, hue1, hue2 and hue3).
+    */
+  --App-primary-df: #2196f3;
+  --App-primary-h1: #64b5f6;
+  --App-primary-h2: #1565c0;
+  --App-primary-h3: #82b1ff;
+
+  --App-accent-df: #ffab40;
+  --App-accent-h1: #ffd180;
+  --App-accent-h2: #ff9100;
+  --App-accent-h3: #ff6d00;
+
+  --App-warn-df: #f44336;
+  --App-warn-h1: #e57373;
+  --App-warn-h2: #c62828;
+  --App-warn-h3: #ff8a80;
+
+  /* Grayscale */
+  --App-black: rgb(0, 0, 0);
+  --App-superdark: color(var(--App-black) l(10%));
+  --App-darkergrey: color(var(--App-black) l(15%));
+  --App-darkgrey: color(var(--App-black) l(25%));
+  --App-grey: color(var(--App-black) l(50%));
+  --App-lightgrey: color(var(--App-black) l(90%));
+  --App-lightergrey: color(var(--App-black) l(98%));
+  --Appwhite: rgb(255, 255, 255);
+
+  /* Form elements */
+  --Form-textcolor: var(--App-textcolor);
+  --Form-basefont: var(--App-basefont);
+  --Form-fs-xsmall: var(--App-fs-xsmall);
+  --Form-fs-small: var(--App-fs-small);
+  --Form-fs-normal: var(--App-fs-normal);
+  --Form-border-clr: var(--App-primary-df);
+  --Form-warn-clr: var(--App-warn-df);
+
+  /* Button component */
+  --Button-background: var(--App-accent-df);
+  --Button-color: #fff;
+  --Button-font-size: var(--App-fs-normal);
+  --Button-fs-xsmall: var(--App-fs-xsmall);
+  --Button-fs-small: var(--App-fs-small);
+  --Button-fs-huge: var(--App-fs-huge);
+  --Button-fs-extreme: var(--App-fs-extreme);
+
+  /* IconButton component */
+  --IconButton-color: #fff;
+
+  /* Material icons */
+  --MaterialIcon-src: local("Material Icons"), local("MaterialIcons-Regular"), url("https://fonts.gstatic.com/s/materialicons/v17/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2") format("woff2");
+  --MaterialIcon-error-color: var(--App-warn-h1);
+
+  /* Buttons utils */
+  --u-Buttons-fs-medium: var(--App-fs-medium);
+}
+
+/* Custom media queries (Mobile first)
+   ========================================================================== */
+
+/* xsmall devices (portrait mobiles) */
+
+@custom-media --xxsmall-viewport (min-width: 22.5rem);
+@custom-media --xxsmall-viewport-max (max-width: 22.4375rem);
+@custom-media --xsmall-viewport (min-width: 30rem);
+@custom-media --xsmall-viewport-max (max-width: 29.9375rem);
+
+/* small devices (Portrait tablets, landscape mobiles) */
+
+@custom-media --small-viewport (min-width: 37.5rem);
+@custom-media --small-viewport-max (max-width: 37.4375rem);
+
+/* medium devices */
+
+@custom-media --medium-viewport (min-width: 60rem);
+@custom-media --medium-viewport-max (max-width: 59.9375rem);
+
+/* large devices */
+
+@custom-media --large-viewport (min-width: 80rem);
+@custom-media --large-viewport-max (max-width: 79.9375rem);
+
+/* extra large devices */
+
+@custom-media --xlarge-viewport (min-width: 120rem);
+@custom-media --xlarge-viewport-max (max-width: 119.9375rem);
