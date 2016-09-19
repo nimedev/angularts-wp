@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "dependencies": {
     "abbrev": {
       "version": "1.0.9",

@@ -86,6 +86,11 @@ module.exports = {
       }
     ]
   },
+  tslint: {
+    configuration: {
+      exclude: './src/app/app.constants.ts'
+    }
+  },
   postcss: function (webpack) {
     return [
       atImport({
