@@ -12,6 +12,6 @@ const ip = require('ip')
  */
 module.exports = {
   /** Host and port for api */
-  apiHost: process.env.YGH_API_HOST || ip.address(),
-  apiPort: process.env.YGH_API_PORT || 8080
+  apiHost: process.env.ANGULARTS_WP_API_HOST || ip.address(),
+  apiPort: process.env.ANGULARTS_WP_API_PORT || 8080
 }

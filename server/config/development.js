@@ -18,7 +18,7 @@ module.exports = class extends Environment {
    */
   constructor() {
     super()
-    const envPort = process.env.ANGULARJS_TS_PORT
+    const envPort = process.env.ANGULARTS_WP_PORT
 
     // Server port (Increase the port by one used for lite server script)
     this.port = envPort ? Number.parseInt(envPort) + 1 : 3001

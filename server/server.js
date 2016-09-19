@@ -47,6 +47,6 @@ app.route('/*')
 // START THE SERVER
 // ====================================
 app.listen(appConfig.port, appConfig.ip, () => {
-  console.log('ANGULARJS_TS-SERVER %s running on port %d, in %s mode',
+  console.log('ANGULARTS_WP-SERVER %s running on port %d, in %s mode',
     appSetting.version, appConfig.port, app.get('env'))
 })

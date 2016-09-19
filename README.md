@@ -32,12 +32,13 @@ npm install
 ### Environment variables
 
 - Environment for server: `NODE_ENV`='development'
-- Webapplication server: `ANGULARJTS_WP_HOST`=localIP and `ANGULARJTS_WP_PORT`=3000
+- Webapplication server: `ANGULARTS_WP_HOST`=localIP and `ANGULARTS_WP_PORT`=3000
+- API url: `ANGULARTS_WP_API_HOST`=localIP and `ANGULARTS_WP_API_PORT`=3000
 
 To change any of this variables:
 
 ```sh
-export ANGULARJTS_WP_PORT=8000
+export ANGULARTS_WP_PORT=8000
 ```
 
 ### Development workflow
@@ -87,7 +88,7 @@ npm uninstall eslint && npm install eslint -D
 
 ```sh
 # cd to your project folder
-npm shrinkwrap --dev
+npm run shrink
 ```
 
 ### Others scripts
