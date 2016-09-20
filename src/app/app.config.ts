@@ -4,7 +4,7 @@
  */
 
 // Dependencies
-import defaultLanguage from 'src/assets/i18n/locale-en.json'
+const defaultLanguage = require('../assets/i18n/locale-en.json')
 import appConstants from './app.constants'
 
 // Injection array for minification compatibility
@@ -39,17 +39,22 @@ export function appConfig($compileProvider, $locationProvider, $logProvider,
 
   // angular-translate configuration
   $translateProvider.translations('en', defaultLanguage)
+  $translateProvider.fallbackLanguage('en')
+  $translateProvider.preferredLanguage('en')
   $translateProvider.useStaticFilesLoader({
     prefix: 'assets/i18n/locale-',
     suffix: '.json'
   })
-  $translateProvider.preferredLanguage('en')
-  $translateProvider.fallbackLanguage('en')
   $translateProvider.useLocalStorage()
   $translateProvider.useSanitizeValueStrategy('escape')
-  $translateProvider.useMissingTranslationHandlerLog()
 
-  // Disable in production
+  // Actions in development
+  if (appConstants.env === 'development') {
+    // angular translate logs
+    $translateProvider.useMissingTranslationHandlerLog()
+  }
+
+  // Actions in production
   if (appConstants.env === 'production') {
     // Disable debug data. Enable in development if use Proactor or Batarang
     $compileProvider.debugInfoEnabled(false)

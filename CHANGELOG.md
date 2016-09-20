@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.1.0] - 2012-09-20
+
+### Added
+- Implement i18n in dynamicHeadService.
+
+### Modified
+- improve angular-translate configuration in app.config.ts.
+
+
 ## [1.0.3] - 2012-09-19
 
 ### Fixed

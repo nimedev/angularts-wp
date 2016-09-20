@@ -1,5 +1,7 @@
 {
   "HOME": {
+    "HEAD_TITLE": "AngularJS seed - Inicio",
+    "HEAD_DESCRIPTION": "AngularJS seed, angular typescript, webpack",
     "LABEL": "BIENVENIDO!"
   }
 }

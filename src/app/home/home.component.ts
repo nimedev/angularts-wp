@@ -6,6 +6,9 @@
 const template  = require('src/app/home/home.component.html')
 import './home.component.css'
 
+// Services to inject
+import { I18nService } from '../shared/services/i18n.service'
+
 /**
  * Component name
  */
@@ -17,13 +20,13 @@ export const homeComponentName = 'atsHome'
 export class HomeController {
 
   // Use the $inject property to ensure proper functionality after minification
-  public static $inject = ['$translate']
+  public static $inject = ['i18nService']
 
   /**
    * Create a controller
-   * @param {Object} $translate - to change language.
+   * @param {I18nService} i18nService - to change language.
    */
-  constructor(private $translate) {
+  constructor(private i18nService: I18nService) {
 
   }
 
@@ -32,7 +35,7 @@ export class HomeController {
    * @param {String} lang - code of language to change
    */
   changeLanguage(lang) {
-    this.$translate.use(lang)
+    this.i18nService.changeLanguage(lang)
   }
 }
 

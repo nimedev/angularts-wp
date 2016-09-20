@@ -23,8 +23,8 @@ export function homeConfig($stateProvider) {
       template: '<ats-home></ats-home>',
       data: {
         dynamicHead: {
-          title: 'AngularJS seed - Home',
-          description: 'AngularJS seed, angular typescritp'
+          title: 'HOME.HEAD_TITLE',
+          description: 'HOME.HEAD_DESCRIPTION'
         }
       }
     })
