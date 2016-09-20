@@ -4,7 +4,7 @@
  */
 
 // Dependencies
-const defaultLanguage = require('../assets/i18n/locale-en.json')
+const defaultLanguage = require('../assets/locales/locale-en.json')
 import appConstants from './app.constants'
 
 // Injection array for minification compatibility
@@ -42,7 +42,7 @@ export function appConfig($compileProvider, $locationProvider, $logProvider,
   $translateProvider.fallbackLanguage('en')
   $translateProvider.preferredLanguage('en')
   $translateProvider.useStaticFilesLoader({
-    prefix: 'assets/i18n/locale-',
+    prefix: 'assets/locales/locale-',
     suffix: '.json'
   })
   $translateProvider.useLocalStorage()

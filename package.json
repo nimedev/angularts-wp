@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "node app-constants && webpack --config webpack.config.build.js && cp -r src/assets dist && cp src/favicon.ico dist && cp src/robots.txt dist",
@@ -92,7 +92,7 @@
     "postcss-nested": "1.0.0",
     "pre-commit": "1.1.3",
     "style-loader": "0.13.1",
-    "stylelint": "7.2.0",
+    "stylelint": "7.3.1",
     "stylelint-config-nimedev": "7.0.0",
     "ts-loader": "0.8.2",
     "tslint": "3.15.1",

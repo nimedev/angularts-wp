@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.2.0] - 2012-09-20
+
+### Modified
+- Rename i18n folder in assets to locales.
+
+
 ## [1.1.0] - 2012-09-20
 
 ### Added
