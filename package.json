@@ -1,9 +1,10 @@
 {
   "name": "angularts-wp",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "node app-constants && webpack --config webpack.config.build.js && cp -r src/assets dist && cp src/favicon.ico dist && cp src/robots.txt dist",
+    "constants": "node src/constants",
     "dev": "npm run watch",
     "eslint": "eslint --ext=js .",
     "lint": "npm run eslint && npm run tslint",
@@ -13,7 +14,8 @@
     "tslint": "tslint 'src/**/*.ts' -e src/app/app.constants.ts",
     "typings": "typings install",
     "update": "npm install && npm prune --production=false && npm outdated",
-    "watch": "nodemon --watch app-constants app-constants & webpack-dev-server"
+    "watch": "parallelshell 'npm run watch:constants' 'webpack-dev-server'",
+    "watch:constants": "onchange 'src/constants/**/*.js' -- npm run constants"
   },
   "pre-commit": [
     "lint"
@@ -81,7 +83,8 @@
     "niduscss-utils-state": "1.1.1",
     "niduscss-utils-text": "1.3.2",
     "node-notifier": "4.6.1",
-    "nodemon": "1.10.2",
+    "onchange": "3.0.2",
+    "parallelshell": "2.0.0",
     "postcss-calc": "5.3.1",
     "postcss-color-function": "2.0.1",
     "postcss-custom-media": "5.0.1",

@@ -1,5 +1,15 @@
 # Change Log
 
+## [1.2.1] - 2012-09-21
+
+### Added
+- Implement constants scripts and use onchange module to watch for changes.
+- Add parallelshell module to use in watch script.
+
+### Modified
+- Move constants module.
+
+
 ## [1.2.0] - 2012-09-20
 
 ### Modified

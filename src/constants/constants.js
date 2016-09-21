@@ -11,7 +11,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 const envUrl = require('./env-url')
 
 // Get jspm dependencies from package.json
-const appSetting = require('../package')
+const appSetting = require('../../package')
 
 /**
  * Constants object for application
