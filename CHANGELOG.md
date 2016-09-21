@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.2.2] - 2012-09-21
+
+### Modified
+- Add -i flag to watch:constants script.
+
+
 ## [1.2.1] - 2012-09-21
 
 ### Added

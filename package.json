@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "node app-constants && webpack --config webpack.config.build.js && cp -r src/assets dist && cp src/favicon.ico dist && cp src/robots.txt dist",
@@ -15,7 +15,7 @@
     "typings": "typings install",
     "update": "npm install && npm prune --production=false && npm outdated",
     "watch": "parallelshell 'npm run watch:constants' 'webpack-dev-server'",
-    "watch:constants": "onchange 'src/constants/**/*.js' -- npm run constants"
+    "watch:constants": "onchange 'src/constants/**/*.js' -i -- npm run constants"
   },
   "pre-commit": [
     "lint"
