@@ -93,21 +93,7 @@ npm run shrink
 
 ### Others scripts
 
-To run eslint in console type:
-
-```sh
-# cd to your project folder
-npm run eslint
-```
-
-To run tslint in console type:
-
-```sh
-# cd to your project folder
-npm run tslint
-```
-
-To run all linters and TypeScript compiler in console type:
+To run all linters:
 
 ```sh
 # cd to your project folder
