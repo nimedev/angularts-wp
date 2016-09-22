@@ -6,7 +6,7 @@
     "build": "npm run constants && webpack --config webpack.config.build.js && cp -r src/assets dist && cp src/favicon.ico dist && cp src/robots.txt dist",
     "constants": "node src/constants",
     "dev": "npm run watch",
-    "lint": "npm run lint:js && npm run tslint",
+    "lint": "npm run lint:js && npm run lint:ts",
     "lint:js": "eslint --ext=js .",
     "lint:ts": "tslint 'src/**/*.ts' -e src/app/app.constants.ts",
     "postinstall": "npm run typings",
