@@ -1,5 +1,17 @@
 # Change Log
 
+## [1.3.0] - 2012-09-22
+
+### Added
+- Add lint:css script with stylelint.
+
+### Modified
+- Improve lint scripts.
+
+### Updated
+- Upgrade typings.
+
+
 ## [1.2.3] - 2012-09-21
 
 ### Modified
