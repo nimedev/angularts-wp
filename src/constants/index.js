@@ -1,7 +1,7 @@
 /**
  * Select app constants according to environment.
  * Create a constants file used by application.
- * @module app-config
+ * @module constants
  */
 'use strict'
 

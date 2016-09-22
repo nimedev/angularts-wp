@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.2.3] - 2012-09-21
+
+### Modified
+- Update comments in constants module.
+
+
 ## [1.2.2] - 2012-09-21
 
 ### Modified
