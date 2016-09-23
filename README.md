@@ -74,7 +74,7 @@ export NODE_ENV='production'
 npm start
 ```
 
-### Install/Update dependencies
+### Install/Uninstall/Update dependencies
 Follow this rules to update dependencies:
 
 - Uninstall old dependency and install again
@@ -82,13 +82,6 @@ Follow this rules to update dependencies:
 ```sh
 # cd to your project folder
 npm uninstall eslint && npm install eslint -D
-```
-
-- Update shrinkwrap file
-
-```sh
-# cd to your project folder
-npm run shrink
 ```
 
 ### Others scripts

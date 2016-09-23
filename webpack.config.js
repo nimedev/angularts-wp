@@ -1,9 +1,11 @@
 // npm modules
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ip = require('ip')
-const stylelint = require('stylelint')
+
+// Webpack plugins
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // Postcss plugins
+const stylelint = require('stylelint')
 const atImport = require('postcss-import')
 const autoprefixer = require('autoprefixer')
 const calc = require('postcss-calc')
@@ -91,7 +93,7 @@ module.exports = {
       exclude: './src/app/app.constants.ts'
     }
   },
-  postcss: function (webpack) {
+  postcss: webpack => {
     return [
       atImport({
         addDependencyTo: webpack,

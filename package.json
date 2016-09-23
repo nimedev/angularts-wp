@@ -1,9 +1,9 @@
 {
   "name": "angularts-wp",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
-    "build": "npm run constants && webpack --config webpack.config.build.js && cp -r src/assets dist && cp src/favicon.ico dist && cp src/robots.txt dist",
+    "build": "npm run constants && webpack --config webpack.config.build.js",
     "constants": "node src/constants",
     "dev": "npm run watch",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:ts",
@@ -56,6 +56,8 @@
   },
   "devDependencies": {
     "autoprefixer": "6.4.1",
+    "clean-webpack-plugin": "0.1.10",
+    "copy-webpack-plugin": "3.0.1",
     "css-loader": "0.25.0",
     "eslint": "3.5.0",
     "eslint-config-nimedev": "3.0.1",

@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.3.1] - 2012-09-23
+
+### Modified
+- Improve build process.
+
+
 ## [1.3.0] - 2012-09-22
 
 ### Added

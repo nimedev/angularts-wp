@@ -1,4 +1,13 @@
+// npm modules
 const webpack = require('webpack')
+
+// Webpack plugins
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+// Postcss modules
 const stylelint = require('stylelint')
 const autoprefixer = require('autoprefixer')
 const calc = require('postcss-calc')
@@ -8,9 +17,10 @@ const customProperties = require('postcss-custom-properties')
 const atImport = require('postcss-import')
 const mixins = require('postcss-mixins')
 const nested = require('postcss-nested')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+/**
+ * Webpack configuration for build
+ */
 module.exports = {
   context: __dirname,
   entry: './src/main.ts',
@@ -19,6 +29,9 @@ module.exports = {
     path: './dist'
   },
   plugins: [
+    new CleanWebpackPlugin('dist', {
+      root: process.cwd()
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       hash: true
@@ -28,7 +41,16 @@ module.exports = {
         warnings: false
       }
     }),
-    new ExtractTextPlugin('styles.css')
+    new ExtractTextPlugin('styles.css'),
+    new CopyWebpackPlugin([
+      {
+        from: './src/assets',
+        to: 'assets'
+      }, {
+        from: './src/favicon.ico'
+      }, {
+        from: './src/robots.txt'
+      }])
   ],
   resolve: {
     root: __dirname,
@@ -41,13 +63,13 @@ module.exports = {
     loaders: [
       {
         test: /\.ts$/,
-        loader:'ts',
+        loader: 'ts',
         exclude: /node_modules/
       },
       {
         test: /\.html$/,
         exclude: /\index.html/,
-        loader:'html'
+        loader: 'html'
       },
       {
         test: /\.css$/,
@@ -82,7 +104,7 @@ module.exports = {
       exclude: './src/app/app.constants.ts'
     }
   },
-  postcss: function (webpack) {
+  postcss: webpack => {
     return [
       atImport({
         addDependencyTo: webpack,
