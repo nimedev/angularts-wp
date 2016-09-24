@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.3.2] - 2012-09-23
+
+### Modified
+- Put in libs folder some common configurations for webpack.
+
+
 ## [1.3.1] - 2012-09-23
 
 ### Modified

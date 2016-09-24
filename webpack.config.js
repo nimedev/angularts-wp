@@ -4,16 +4,8 @@ const ip = require('ip')
 // Webpack plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-// Postcss plugins
-const stylelint = require('stylelint')
-const atImport = require('postcss-import')
-const autoprefixer = require('autoprefixer')
-const calc = require('postcss-calc')
-const colorFunction = require('postcss-color-function')
-const customMedia = require('postcss-custom-media')
-const customProperties = require('postcss-custom-properties')
-const mixins = require('postcss-mixins')
-const nested = require('postcss-nested')
+// Config parts
+const webpackParts = require('./libs/webpack.parts')
 
 /**
  * Webpack configuration for development environment
@@ -88,28 +80,8 @@ module.exports = {
       }
     ]
   },
-  tslint: {
-    configuration: {
-      exclude: './src/app/app.constants.ts'
-    }
-  },
-  postcss: webpack => {
-    return [
-      atImport({
-        addDependencyTo: webpack,
-        plugins: [
-          stylelint
-        ]
-      }),
-      mixins,
-      customMedia,
-      customProperties,
-      nested,
-      calc,
-      colorFunction,
-      autoprefixer({ browsers: ['last 2 versions'] })
-    ]
-  },
+  tslint: webpackParts.tslint,
+  postcss: webpackParts.postcss,
   devServer: {
     host: process.env.ANGULARTS_WP_HOST || ip.address(),
     port: process.env.ANGULARTS_WP_PORT || 3000,
