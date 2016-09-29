@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.4.0] - 2012-09-29
+
+### Updated
+- Use nodejs v6.7.0.
+- Upgrade autoprefixer and eslint packages.
+
+
 ## [1.3.2] - 2012-09-23
 
 ### Modified
