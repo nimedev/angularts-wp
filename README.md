@@ -31,8 +31,8 @@ npm install
 
 ### Environment variables
 
-- Environment for server: `NODE_ENV`='development'
-- Webapplication server: `ANGULARTS_WP_HOST`=localIP and `ANGULARTS_WP_PORT`=3000
+- Environment: `NODE_ENV`='development'
+- Webapplication dev server: `ANGULARTS_WP_HOST`=localIP and `ANGULARTS_WP_PORT`=3000
 - API url: `ANGULARTS_WP_API_HOST`=localIP and `ANGULARTS_WP_API_PORT`=8080
 
 To change any of this variables:
@@ -46,7 +46,7 @@ export ANGULARTS_WP_PORT=8000
 #### Static server with live reload
 ```sh
 # cd to your project folder
-npm run dev
+npm start
 # After this, a message indicate the url to run the application
 ```
 This create a server using `webpack-dev-server` to serve the application in development environment.  
@@ -62,17 +62,6 @@ export NODE_ENV='production'
 npm run build
 ```
 Put all in `dist` folder ready for production.
-
-This project include a small server ready for production
-
-```sh
-# cd to your project folder
-# Set environment variable for production
-export NODE_ENV='production'
-
-# run the server
-npm start
-```
 
 ### Install/Uninstall/Update dependencies
 Follow this rules to update dependencies:

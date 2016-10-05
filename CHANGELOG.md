@@ -1,5 +1,16 @@
 # Change Log
 
+## [1.5.0] - 2012-10-05
+
+### Deleted
+- Remove production server.
+
+### Modified
+- Move niduscss packages to dependencies.
+- Remove save=true from .npmrc file.
+- Change development workflow.
+
+
 ## [1.4.0] - 2012-09-29
 
 ### Updated
