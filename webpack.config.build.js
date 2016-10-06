@@ -52,6 +52,16 @@ module.exports = {
     modulesDirectories: ['node_modules']
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.ts$/,
+        loader: 'tslint'
+      },
+      {
+        test: /\.css$/,
+        loaders: ['postcss']
+      }
+    ],
     loaders: [
       {
         test: /\.ts$/,

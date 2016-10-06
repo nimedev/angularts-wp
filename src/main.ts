@@ -9,13 +9,10 @@ import 'angular'
 import './styles/style.css'
 
 // Application component
-import { appModule } from './app/index'
-
-// Configurations
-import appConfig from './app/app.constants'
+import { appModule, appConstants } from './app/index'
 
 // Constants
-const appName = appConfig.appName
+const appName = appConstants.appName
 
 // Variables
 let htmlDocument

@@ -7,7 +7,6 @@
 
 - [Node.js](https://nodejs.org/en/download/).
 - [npm](https://www.npmjs.com/), installed with Node.js.
-- [jspm](http://jspm.io/), a package manager for SystemJS.
 
 
 ## Install dependencies

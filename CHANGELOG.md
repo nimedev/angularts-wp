@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.5.1] - 2012-10-06
+
+### Fix
+- Fix README.md file.
+
+### Updated
+- Upgrade clean-webpack-plugin, eslint and webpack-dev-server.
+
+
 ## [1.5.0] - 2012-10-05
 
 ### Deleted
