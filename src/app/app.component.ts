@@ -4,8 +4,8 @@
  */
 
 // Services to inject
-import { DynamicHeadService } from './shared/services/dynamic-head.service'
-import { I18nService } from './shared/services/i18n.service'
+import { DynamicHeadService } from '../shared/services/dynamic-head.service'
+import { I18nService } from '../shared/services/i18n.service'
 
 /**
  * Component name

@@ -16,16 +16,16 @@ import { appComponent, appComponentName } from './app.component'
 import { appConfig } from './app.config'
 
 // Feature modules
-import { baseModule } from './base/index'
-import { homeModule } from './home/index'
+import { baseModule } from './base'
+import { homeModule } from './home'
 
 // Shared feature modules
-import { directivesModule } from './shared/directives/index'
-import { interceptorModule } from './shared/interceptor/index'
-import { servicesModule } from './shared/services/index'
+import { directivesModule } from '../shared/directives'
+import { interceptorModule } from '../shared/interceptor'
+import { servicesModule } from '../shared/services'
 
 // Application constants
-import appConstants from './app.constants'
+import appConstants from '../shared/app.constants'
 
 /**
  * Module name

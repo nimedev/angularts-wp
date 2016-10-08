@@ -84,16 +84,6 @@
   --Button-fs-small: var(--App-fs-small);
   --Button-fs-huge: var(--App-fs-huge);
   --Button-fs-extreme: var(--App-fs-extreme);
-
-  /* IconButton component */
-  --IconButton-color: #fff;
-
-  /* Material icons */
-  --MaterialIcon-src: local("Material Icons"), local("MaterialIcons-Regular"), url("https://fonts.gstatic.com/s/materialicons/v17/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2") format("woff2");
-  --MaterialIcon-error-color: var(--App-warn-h1);
-
-  /* Buttons utils */
-  --u-Buttons-fs-medium: var(--App-fs-medium);
 }
 
 /* Custom media queries (Mobile first)

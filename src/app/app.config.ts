@@ -5,7 +5,7 @@
 
 // Dependencies
 const defaultLanguage = require('../assets/locales/locale-en.json')
-import appConstants from './app.constants'
+import appConstants from '../shared/app.constants'
 
 // Injection array for minification compatibility
 appConfig.$inject = [

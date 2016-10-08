@@ -3,11 +3,11 @@
  */
 
 // Dependencies
-const template  = require('src/app/home/home.component.html')
+const template  = require('./home.component.html')
 import './home.component.css'
 
 // Services to inject
-import { I18nService } from '../shared/services/i18n.service'
+import { I18nService } from '../../shared/services/i18n.service'
 
 /**
  * Component name

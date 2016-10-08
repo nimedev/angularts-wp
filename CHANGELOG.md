@@ -1,5 +1,16 @@
 # Change Log
 
+## [1.6.0] - 2012-10-07
+
+### Deleted
+- Remove node-notifier package.
+
+### Modified
+- Improve webpack configuration.
+- Improve styles folder and clean niduscss framework.
+- Move shared folder to src and move app.constants.ts to shared.
+
+
 ## [1.5.1] - 2012-10-06
 
 ### Fix

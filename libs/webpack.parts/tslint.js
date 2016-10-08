@@ -8,6 +8,6 @@
  */
 module.exports = {
   configuration: {
-    exclude: './src/app/app.constants.ts'
+    exclude: './src/shared/app.constants.ts'
   }
 }

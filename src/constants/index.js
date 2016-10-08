@@ -14,7 +14,7 @@ const constants = require(`./constants`)
 
 // Constants & Variables
 const fileName = 'app.constants.ts'
-const destPath = path.resolve(`${__dirname}/../app/${fileName}`)
+const destPath = path.resolve(`${__dirname}/../shared/${fileName}`)
 console.log(destPath)
 
 // Convert object to string and add export function for the file to create

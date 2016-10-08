@@ -1,15 +1,18 @@
 /**
  * Main module used to bootstrap de application
- * @module main
+ * @module index
  */
 /// <reference path="../typings/index.d.ts" />
 
 // Dependencies
 import 'angular'
-import './styles/style.css'
+import './styles'
 
 // Application component
-import { appModule, appConstants } from './app/index'
+import { appModule } from './app'
+
+// Application constants
+import appConstants from './shared/app.constants'
 
 // Constants
 const appName = appConstants.appName
