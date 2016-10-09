@@ -30,9 +30,13 @@ npm install
 
 ### Environment variables
 
-- Environment: `NODE_ENV`='development'
-- Webapplication dev server: `ANGULARTS_WP_HOST`=localIP and `ANGULARTS_WP_PORT`=3000
-- API url: `ANGULARTS_WP_API_HOST`=localIP and `ANGULARTS_WP_API_PORT`=8080
+#### Host configuration
+- `NODE_ENV="development"`. Environment for server.
+- `ANGULARTS_WP_HOST=localIP`. Host of webapplication.
+- `ANGULARTS_WP_PORT=3000`. Por of webapplication (Use in development).
+
+#### Access URLs
+- `ANGULARTS_WP_API_URL="http://${ip.address()}:${8080}/api"`. Url of API.
 
 To change any of this variables:
 

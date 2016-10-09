@@ -8,7 +8,7 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
 // Siblings & Childs modules
-const envUrl = require('./env-url')
+const environmentUrl = require('./environment-url')
 
 // Get jspm dependencies from package.json
 const appSetting = require('../../package')
@@ -24,7 +24,7 @@ module.exports = {
   version: appSetting.version,
 
   // API base url
-  restUrl: `http://${envUrl.apiHost}:${envUrl.apiPort}/api`,
+  restUrl: environmentUrl.apiUrl,
 
   // Save the environment
   env: process.env.NODE_ENV
