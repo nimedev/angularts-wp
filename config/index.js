@@ -26,6 +26,7 @@ const codeString = `export default ${objectString}`
 fs.writeFile(destPath, codeString, err => {
   // eslint-disable-next-line no-console
   if (err) return console.error(err)
+
   // eslint-disable-next-line no-console
   console.log('App constants: ', constants)
 })

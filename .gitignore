@@ -14,7 +14,7 @@ node_modules
 typings
 npm-debug.log
 npm-debug.log.*
-app.constants.ts
+src/constants/constants.ts
 
 # System Files
 .DS_Store

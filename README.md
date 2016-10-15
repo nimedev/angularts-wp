@@ -121,6 +121,7 @@ yarn run lint
 
 #### Naming conventions **[SuitCSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)**.
 
+
 ## Angular HTML5 mode or pretty URLs
 
 This mode is set by default. If use it consider this:

@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.0.1] - 2012-10-15
+
+### Fixed
+- Remove constants.ts from git control.
+
+
 ## [2.0.0] - 2012-10-15
 
 ### Added
