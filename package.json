@@ -1,21 +1,20 @@
 {
   "name": "angularts-wp",
-  "version": "1.7.0",
+  "version": "2.0.0",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "npm run constants && webpack",
-    "constants": "node src/constants",
-    "start": "npm run watch",
+    "constants": "node config",
+    "start": "npm run open && npm run watch",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:ts",
     "lint:css": "stylelint 'src/**/*.css'",
     "lint:js": "eslint --ext=js .",
-    "lint:ts": "tslint 'src/**/*.ts' -e src/shared/app.constants.ts",
+    "lint:ts": "tslint 'src/**/*.ts' -e 'src/constants/constants.ts' -e 'src/typings/**/*'",
+    "open": "node libs/opener",
     "postinstall": "npm run typings",
-    "shrink": "npm prune && npm shrinkwrap --dev",
-    "typings": "typings install",
-    "update": "npm install && npm prune --production=false && npm outdated",
+    "typings": "cd src && typings install",
     "watch": "parallelshell 'npm run watch:constants' 'webpack-dev-server'",
-    "watch:constants": "onchange 'src/constants/**/*.js' -i -- npm run constants"
+    "watch:constants": "onchange 'config/**/*.js' -i -- npm run constants"
   },
   "pre-commit": [
     "lint"
@@ -38,21 +37,12 @@
   },
   "homepage": "https://github.com/nimedev/angularts-wp#readme",
   "engines": {
-    "npm": ">=3.10.3",
-    "node": ">=6.7.0 <7.0.0"
+    "npm": ">=3.10.8",
+    "node": ">=6.8.0 <7.0.0"
   },
   "dependencies": {
     "angular": "1.5.8",
-    "angular-cookies": "1.5.8",
-    "angular-messages": "1.5.8",
-    "angular-translate": "2.12.1",
-    "angular-translate-handler-log": "2.12.1",
-    "angular-translate-loader-static-files": "2.12.1",
-    "angular-translate-storage-cookie": "2.12.1",
-    "angular-translate-storage-local": "2.12.1",
-    "angular-ui-router": "0.3.1",
     "niduscss-base": "1.0.1",
-    "niduscss-components-button": "1.2.0",
     "niduscss-elements-form": "1.2.0",
     "niduscss-elements-link": "1.1.1",
     "niduscss-elements-typography": "1.1.2",
@@ -66,11 +56,11 @@
     "niduscss-utils-text": "1.3.2"
   },
   "devDependencies": {
-    "autoprefixer": "6.5.0",
-    "clean-webpack-plugin": "0.1.12",
+    "autoprefixer": "6.5.1",
+    "clean-webpack-plugin": "0.1.13",
     "copy-webpack-plugin": "3.0.1",
     "css-loader": "0.25.0",
-    "eslint": "3.7.1",
+    "eslint": "3.8.0",
     "eslint-config-nimedev": "3.1.0",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.9.0",
@@ -79,6 +69,7 @@
     "ip": "1.1.3",
     "json-loader": "0.5.4",
     "onchange": "3.0.2",
+    "opener": "1.4.2",
     "parallelshell": "2.0.0",
     "postcss-calc": "5.3.1",
     "postcss-color-function": "2.0.1",
@@ -90,9 +81,9 @@
     "postcss-nested": "1.0.0",
     "pre-commit": "1.1.3",
     "style-loader": "0.13.1",
-    "stylelint": "7.4.1",
+    "stylelint": "7.4.2",
     "stylelint-config-nimedev": "7.0.0",
-    "ts-loader": "0.9.0",
+    "ts-loader": "0.9.1",
     "tslint": "3.15.1",
     "tslint-loader": "2.1.5",
     "typescript": "1.8.10",

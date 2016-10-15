@@ -1,6 +1,7 @@
 /**
  * Return the url of the resources according with environment.
  * @module environment-url
+ * @memberOf config
  */
 'use strict'
 

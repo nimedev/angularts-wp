@@ -1,7 +1,7 @@
 /**
- * Select app constants according to environment.
+ * Select constants for application according to environment.
  * Create a constants file used by application.
- * @module constants
+ * @module config
  */
 'use strict'
 
@@ -13,8 +13,9 @@ const path = require('path')
 const constants = require(`./constants`)
 
 // Constants & Variables
-const fileName = 'app.constants.ts'
-const destPath = path.resolve(`${__dirname}/../shared/${fileName}`)
+const fileName = 'constants.ts'
+const destPath = path.resolve(`${__dirname}/../src/constants/${fileName}`)
+// eslint-disable-next-line no-console
 console.log(destPath)
 
 // Convert object to string and add export function for the file to create
@@ -23,6 +24,8 @@ const codeString = `export default ${objectString}`
 
 // Save the new file
 fs.writeFile(destPath, codeString, err => {
+  // eslint-disable-next-line no-console
   if (err) return console.error(err)
+  // eslint-disable-next-line no-console
   console.log('App constants: ', constants)
 })

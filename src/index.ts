@@ -2,32 +2,39 @@
  * Main module used to bootstrap de application
  * @module index
  */
-/// <reference path="../typings/index.d.ts" />
+/// <reference path="./typings/index.d.ts" />
 
 // Dependencies
 import 'angular'
 import './styles'
 
 // Application component
-import { appModule } from './app'
+import { appComponent } from './components'
 
 // Application constants
-import appConstants from './shared/app.constants'
+import { constants } from './constants'
 
 // Constants
-const appName = appConstants.appName
+const appName = constants.appName
 
-// Variables
-let htmlDocument
-let startApp
-
-// Define angular app.
+// Define angular app
 angular
-  .module(appName, [appModule])
+  .module(appName, [appComponent])
+  .config(
+  ['$compileProvider', '$logProvider', ($compileProvider, $logProvider) => {
+    // Actions in production
+    if (constants.env === 'production') {
+      // Disable debug data. Enable in development if use Proactor or Batarang
+      $compileProvider.debugInfoEnabled(false)
+
+      // Disable log in production
+      $logProvider.debugEnabled(false)
+    }
+  }]
+  )
+  .constant('constants', constants)
 
 // Load app when document is ready
-htmlDocument = angular.element(document)
-
-startApp = () => angular.bootstrap(htmlDocument, [appName])
-
+const htmlDocument = angular.element(document)
+const startApp = () => angular.bootstrap(htmlDocument, [appName])
 htmlDocument.ready(startApp)

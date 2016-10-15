@@ -3,8 +3,6 @@ tmp
 dist
 
 # dependencies
-jspm_packages
 node_modules
 
 # misc
-jspm.config.js

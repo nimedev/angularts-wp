@@ -1,0 +1,1 @@
+export default {"appName":"angularts-wp","version":"2.0.0","restUrl":"http://10.200.0.4:8080/api","env":"development"}

@@ -75,15 +75,6 @@
   --Form-fs-normal: var(--App-fs-normal);
   --Form-border-clr: var(--App-primary-df);
   --Form-warn-clr: var(--App-warn-df);
-
-  /* Button component */
-  --Button-background: var(--App-accent-df);
-  --Button-color: #fff;
-  --Button-font-size: var(--App-fs-normal);
-  --Button-fs-xsmall: var(--App-fs-xsmall);
-  --Button-fs-small: var(--App-fs-small);
-  --Button-fs-huge: var(--App-fs-huge);
-  --Button-fs-extreme: var(--App-fs-extreme);
 }
 
 /* Custom media queries (Mobile first)

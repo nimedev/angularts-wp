@@ -7,24 +7,38 @@
 
 - [Node.js](https://nodejs.org/en/download/).
 - [npm](https://www.npmjs.com/), installed with Node.js.
+- [yarn](https://yarnpkg.com/) a package manager for project dependencies.
 
 
 ## Install dependencies
 
-#### 1) Check Node.js version.
+#### 1) Check `Node.js` version.
 ```sh
 node --version
 ```
-The version should be at or above 6.7.0
+The version should be at or above 6.8.0
 
-#### 2) If you don't have Node.js intalled go to [nodejs](https://nodejs.org/en/download/) and install the appropiate version or use [nvm](http://www.sergiolepore.net/2014/06/30/nvm-instalando-y-usando-node-version-manager/) (Recommended).
+If you don't have Node.js installed go to [nodejs](https://nodejs.org/en/download/) and install the appropiate version or use [nvm](http://www.sergiolepore.net/2014/06/30/nvm-instalando-y-usando-node-version-manager/) (Recommended).
 
-#### 3) Install the workspace `npm` dependencies.
+#### 2) Check `yarn` version.
+```sh
+yarn --version
+```
+The version should be at or above 0.15.1
+
+If you don't have yarn installed go to [yarn](https://yarnpkg.com/en/docs/install) and install the appropiate version.
+
+#### 3) Install the workspace dependencies.
 ```sh
 # cd to your project folder
-npm install
+yarn
 ```
 
+#### 4) Install `typings` for TypeScript intellisense.
+```sh
+# cd to your project folder
+yarn run postinstall
+```
 
 ## Workflow
 
@@ -49,7 +63,7 @@ export ANGULARTS_WP_PORT=8000
 #### Static server with live reload
 ```sh
 # cd to your project folder
-npm start
+yarn start
 # After this, a message indicate the url to run the application
 ```
 This create a server using `webpack-dev-server` to serve the application in development environment.  
@@ -62,27 +76,42 @@ The browser reloads the app when any file change.
 export NODE_ENV='production'
 
 # Build
-npm run build
+yarn run build
 ```
 Put all in `dist` folder ready for production.
 
 ### Install/Uninstall/Update dependencies
 Follow this rules to update dependencies:
 
-- Uninstall old dependency and install again
+- Install dependencies
+
+```sh
+# To install production dependencies
+# cd to your project folder
+yarn add angular --exact
+```
+```sh
+# To install development dependencies
+# cd to your project folder
+yarn add eslint --exact --dev
+```
+
+- Uninstall dependencies
 
 ```sh
 # cd to your project folder
-npm uninstall eslint && npm install eslint -D
+yarn remove angular
 ```
+
+- **To Upgrade any dependencies follow `Uninstall dependencies` step and install again like `Install dependencies`.**
 
 ### Others scripts
 
-To run all linters:
+To run eslint in console type:
 
 ```sh
 # cd to your project folder
-npm run lint
+yarn run lint
 ```
 
 

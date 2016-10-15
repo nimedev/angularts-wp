@@ -1,5 +1,20 @@
 # Change Log
 
+## [2.0.0] - 2012-10-15
+
+### Added
+- Simplify folder structure to start.
+- Add open script.
+
+### Modified
+- Migrate to yarn.
+- Move typings to src folder.
+
+### Updated
+- Use nodejs v6.8.0.
+- Upgrade autoprefixer clean-webpack-plugin eslint stylelint ts-loader.
+
+
 ## [1.7.0] - 2012-10-09
 
 ### Modified
