@@ -1,5 +1,15 @@
 # Change Log
 
+## [2.1.0] - 2012-10-17
+
+### Modified
+- Import base styles before all components.
+
+### Updated
+- Use nodejs v6.8.1.
+- Upgrade: ts-loader, postcss-loader and postcss-mixins.
+
+
 ## [2.0.1] - 2012-10-15
 
 ### Fixed
