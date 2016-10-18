@@ -1,17 +1,17 @@
 {
   "name": "angularts-wp",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "npm run constants && webpack",
     "constants": "node config",
-    "start": "npm run open && npm run watch",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:ts",
     "lint:css": "stylelint 'src/**/*.css'",
     "lint:js": "eslint --ext=js .",
     "lint:ts": "tslint 'src/**/*.ts' -e 'src/constants/constants.ts' -e 'src/typings/**/*'",
     "open": "node libs/opener",
     "postinstall": "npm run typings",
+    "start": "npm run open && npm run watch",
     "typings": "cd src && typings install",
     "watch": "parallelshell 'npm run watch:constants' 'webpack-dev-server'",
     "watch:constants": "onchange 'config/**/*.js' -i -- npm run constants"
@@ -60,7 +60,7 @@
     "clean-webpack-plugin": "0.1.13",
     "copy-webpack-plugin": "3.0.1",
     "css-loader": "0.25.0",
-    "eslint": "3.8.0",
+    "eslint": "3.8.1",
     "eslint-config-nimedev": "3.1.0",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.9.0",
@@ -83,7 +83,7 @@
     "style-loader": "0.13.1",
     "stylelint": "7.4.2",
     "stylelint-config-nimedev": "7.0.0",
-    "ts-loader": "0.9.3",
+    "ts-loader": "0.9.4",
     "tslint": "3.15.1",
     "tslint-loader": "2.1.5",
     "typescript": "1.8.10",
@@ -91,7 +91,7 @@
     "url-loader": "0.5.7",
     "webpack": "1.13.2",
     "webpack-dev-server": "1.16.2",
-    "webpack-merge": "0.14.1",
+    "webpack-merge": "0.15.0",
     "webpack-validator": "2.2.9"
   }
 }

@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.1.1] - 2012-10-18
+
+### Updated
+- Upgrade eslint, ts-loader and webpack-merge.
+
+
 ## [2.1.0] - 2012-10-17
 
 ### Modified
