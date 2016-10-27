@@ -5,25 +5,28 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ip = require('ip')
 const merge = require('webpack-merge')
+const opener = require('opener')
 const validate = require('webpack-validator')
 
 // Configuration parts
 const parts = require('./libs/webpack.parts')
 
 // Constants & Variables
+const host = process.env.ANGULARTS_WP_HOST || ip.address()
+const port = process.env.ANGULARTS_WP_PORT || 3000
 const PATHS = {
   app: path.join(__dirname, 'src'),
   dist: path.join(__dirname, 'dist'),
-  images: path.join(__dirname, 'src/assets/img'),
-  fonts: path.join(__dirname, 'src/assets/fonts'),
+  images: path.join(__dirname, 'public/assets/img'),
+  fonts: path.join(__dirname, 'public/assets/fonts'),
   copy: [
     {
-      from: './src/assets',
+      from: './public/assets',
       to: 'assets'
     }, {
-      from: './src/favicon.ico'
+      from: './public/favicon.ico'
     }, {
-      from: './src/robots.txt'
+      from: './public/robots.txt'
     }]
 }
 
@@ -38,7 +41,7 @@ const common = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './public/index.html',
       hash: true
     })
   ],
@@ -122,10 +125,13 @@ switch (process.env.npm_lifecycle_event) {
       parts.setupCSS(PATHS.app),
       parts.devServer({
         // Customize host/port here if needed
-        host: process.env.ANGULARTS_WP_HOST || ip.address(),
-        port: process.env.ANGULARTS_WP_PORT || 3000
+        host,
+        port
       })
     )
+
+    // Run opener
+    opener(`http://${host}:${port}`)
 }
 
 /**

@@ -12,7 +12,7 @@ const webpack = require('webpack')
 module.exports = options => {
   return {
     devServer: {
-      contentBase: ['./src'],
+      contentBase: ['./public', './src'],
 
       // Enable history API fallback so HTML5 History API based
       // routing works. This is a good default that will come

@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "npm run constants && webpack",
@@ -9,9 +9,8 @@
     "lint:css": "stylelint 'src/**/*.css'",
     "lint:js": "eslint --ext=js .",
     "lint:ts": "tslint 'src/**/*.ts' -e 'src/constants/constants.ts' -e 'src/typings/**/*'",
-    "open": "node libs/opener",
     "postinstall": "npm run typings",
-    "start": "npm run open && npm run watch",
+    "start": "npm run watch",
     "typings": "cd src && typings install",
     "watch": "parallelshell 'npm run watch:constants' 'webpack-dev-server'",
     "watch:constants": "onchange 'config/**/*.js' -i -- npm run constants"
@@ -38,15 +37,15 @@
   "homepage": "https://github.com/nimedev/angularts-wp#readme",
   "engines": {
     "npm": ">=3.10.8",
-    "node": ">=6.8.1 <7.0.0"
+    "node": ">=6.9.1 <7.0.0"
   },
   "dependencies": {
     "angular": "1.5.8",
     "niduscss-base": "1.0.1",
-    "niduscss-elements-form": "1.2.0",
+    "niduscss-elements-form": "1.3.0",
     "niduscss-elements-link": "1.1.1",
     "niduscss-elements-typography": "1.1.2",
-    "niduscss-lib-mixins": "1.3.0",
+    "niduscss-lib-mixins": "1.4.0",
     "niduscss-utils-align": "1.3.1",
     "niduscss-utils-buttons": "1.0.1",
     "niduscss-utils-color": "1.0.1",
@@ -58,14 +57,14 @@
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "clean-webpack-plugin": "0.1.13",
-    "copy-webpack-plugin": "3.0.1",
+    "copy-webpack-plugin": "4.0.0",
     "css-loader": "0.25.0",
     "eslint": "3.8.1",
     "eslint-config-nimedev": "3.1.0",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.9.0",
     "html-loader": "0.4.4",
-    "html-webpack-plugin": "2.22.0",
+    "html-webpack-plugin": "2.24.0",
     "ip": "1.1.3",
     "json-loader": "0.5.4",
     "onchange": "3.0.2",
@@ -81,15 +80,15 @@
     "postcss-nested": "1.0.0",
     "pre-commit": "1.1.3",
     "style-loader": "0.13.1",
-    "stylelint": "7.4.2",
+    "stylelint": "7.5.0",
     "stylelint-config-nimedev": "7.0.0",
-    "ts-loader": "0.9.4",
+    "ts-loader": "0.9.5",
     "tslint": "3.15.1",
     "tslint-loader": "2.1.5",
     "typescript": "1.8.10",
     "typings": "1.4.0",
     "url-loader": "0.5.7",
-    "webpack": "1.13.2",
+    "webpack": "1.13.3",
     "webpack-dev-server": "1.16.2",
     "webpack-merge": "0.15.0",
     "webpack-validator": "2.2.9"

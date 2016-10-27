@@ -1,5 +1,17 @@
 # Change Log
 
+## [2.2.0] - 2012-10-27
+
+### Modified
+- Move some assets to public folder.
+- Move opener to webpack config file.
+
+### Updated
+- Use nodejs v6.9.1.
+- Upgrade niduscss-elements-form and niduscss-lib-mixins.
+- Upgrade stylelint, ts-loader, copy-webpack-plugin, html-webpack-plugin and webpack.
+
+
 ## [2.1.1] - 2012-10-18
 
 ### Updated
