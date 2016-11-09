@@ -1,5 +1,15 @@
 # Change Log
 
+## [2.3.0] - 2012-11-09
+
+### Modified
+- Update lint:js script.
+
+### Updated
+- Upgrade autoprefixer, clean-webpack-plugin, eslint, html-webpack-plugin, postcss-loader, ip and postcss-import.
+- Upgrade ts-loader, typescript and typings.
+
+
 ## [2.2.0] - 2012-10-27
 
 ### Modified
