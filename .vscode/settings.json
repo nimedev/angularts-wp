@@ -12,14 +12,12 @@
 	"files.exclude": {
 		"**/.git": true,
 		"**/.svn": true,
-		"**/.DS_Store": true,
-    "**/jspm_packages/github": true,
-    "**/jspm_packages/npm": true
+		"**/.DS_Store": true
 	},
 	
 	// Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
 	"files.associations": {
-		"*.css": "scss"
+		"*.css": "postcss"
 	},
 	
 	
@@ -56,5 +54,6 @@
 // ESLint configuration
 
   // Control whether eslint is enabled for JavaScript files or not.
-  "eslint.enable": true
+  "eslint.enable": true,
+  "typescript.tsdk": "./node_modules/typescript/lib"
 }
