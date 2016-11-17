@@ -1,12 +1,13 @@
-// core modules
-const path = require('path')
+// Set default node environment to development
+process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
-// npm modules
+const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ip = require('ip')
 const merge = require('webpack-merge')
 const opener = require('opener')
 const validate = require('webpack-validator')
+const webpack = require('webpack')
 
 // Configuration parts
 const parts = require('./libs/webpack.parts')
@@ -14,8 +15,9 @@ const parts = require('./libs/webpack.parts')
 // Constants & Variables
 const host = process.env.ANGULARTS_WP_HOST || ip.address()
 const port = process.env.ANGULARTS_WP_PORT || 3000
+const apiUrl = process.env.ANGULARTS_WP_API_URL || `http://${ip.address()}:${8080}/api`
 const PATHS = {
-  app: path.join(__dirname, 'src'),
+  app: path.join(__dirname, 'app'),
   dist: path.join(__dirname, 'dist'),
   images: path.join(__dirname, 'public/assets/img'),
   fonts: path.join(__dirname, 'public/assets/fonts'),
@@ -40,6 +42,12 @@ const common = {
     filename: '[name].js'
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+        'ANGULARTS_WP_API_URL': JSON.stringify(apiUrl)
+      }
+    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       hash: true,

@@ -1,19 +1,17 @@
 {
   "name": "angularts-wp",
-  "version": "2.4.0",
+  "version": "3.0.0",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
-    "build": "npm run constants && webpack",
-    "constants": "node config",
+    "build": "webpack",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:ts",
-    "lint:css": "stylelint 'src/**/*.css'",
+    "lint:css": "stylelint 'app/**/*.css'",
     "lint:js": "eslint . --ext js",
-    "lint:ts": "tslint 'src/**/*.ts' -e 'src/constants/constants.ts' -e 'src/typings/**/*'",
+    "lint:ts": "tslint 'app/**/*.ts' -e 'app/typings/**/*'",
     "postinstall": "npm run typings",
     "start": "npm run watch",
-    "typings": "cd src && typings install",
-    "watch": "parallelshell 'npm run watch:constants' 'webpack-dev-server'",
-    "watch:constants": "onchange 'config/**/*.js' -i -- npm run constants"
+    "typings": "cd app && typings install",
+    "watch": "webpack-dev-server"
   },
   "pre-commit": [
     "lint"
@@ -58,7 +56,7 @@
     "autoprefixer": "6.5.3",
     "clean-webpack-plugin": "0.1.14",
     "copy-webpack-plugin": "4.0.1",
-    "css-loader": "0.25.0",
+    "css-loader": "0.26.0",
     "eslint": "3.10.2",
     "eslint-config-nimedev": "3.1.0",
     "extract-text-webpack-plugin": "1.0.1",
@@ -67,9 +65,7 @@
     "html-webpack-plugin": "2.24.1",
     "ip": "1.1.4",
     "json-loader": "0.5.4",
-    "onchange": "3.0.2",
     "opener": "1.4.2",
-    "parallelshell": "2.0.0",
     "postcss-calc": "5.3.1",
     "postcss-color-function": "2.0.1",
     "postcss-custom-media": "5.0.1",

@@ -1,1 +1,0 @@
-export { default as appComponent } from './app.module'

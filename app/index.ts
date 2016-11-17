@@ -4,20 +4,18 @@
  */
 /// <reference path="./typings/index.d.ts" />
 
-// Dependencies
-import 'angular'
-import { constants } from './constants'
-
 // Import base styles before all components
 import './styles'
-import { appComponent } from './components'
 
-// Constants
+import 'angular'
+import constants from './constants'
+import appModule from './app.module'
+
 const appName = constants.appName
 
 // Define angular app
 angular
-  .module(appName, [appComponent])
+  .module(appName, [appModule])
   .config(
   ['$compileProvider', '$logProvider', ($compileProvider, $logProvider) => {
     // Actions in production

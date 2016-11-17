@@ -1,1 +1,0 @@
-export { appComponent } from './app'
