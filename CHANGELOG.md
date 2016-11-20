@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.1.2] - 2016-11-20
+
+### Updated
+- Disable javascript validation in vscode settings.
+
+
 ## [3.1.1] - 2016-11-20
 
 ### Fixed

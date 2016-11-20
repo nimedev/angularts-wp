@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "webpack",

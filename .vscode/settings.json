@@ -55,5 +55,12 @@
 
   // Control whether eslint is enabled for JavaScript files or not.
   "eslint.enable": true,
-  "typescript.tsdk": "./node_modules/typescript/lib"
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+
+// TypeScript
+
+	// Enable / disable JavaScript validation
+  "javascript.validate.enable": false
+
 }
