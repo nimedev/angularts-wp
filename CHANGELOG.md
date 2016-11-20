@@ -1,5 +1,15 @@
 # Change Log
 
+## [3.1.0] - 2012-11-20
+
+### Modified
+- Update tsconfig and tslint configuration files.
+- Update vscode settings.
+
+### Updated
+- Upgrade stylelint and tslint-loader.
+
+
 ## [3.0.0] - 2012-11-17
 
 ### Modified

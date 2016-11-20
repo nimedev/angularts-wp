@@ -112,7 +112,6 @@ const common = {
       }
     ]
   },
-  tslint: parts.tslint,
   postcss: parts.postcss
 }
 

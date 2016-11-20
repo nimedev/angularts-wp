@@ -10,7 +10,6 @@ const extractCSS = require('./extract-css')
 const minify = require('./minify')
 const postcss = require('./postcss')
 const setupCSS = require('./setup-css')
-const tslint = require('./tslint')
 
 /**
  * Group parts of webpack configurations
@@ -22,6 +21,5 @@ module.exports = {
   extractCSS,
   minify,
   postcss,
-  setupCSS,
-  tslint
+  setupCSS
 }
