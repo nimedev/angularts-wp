@@ -6,7 +6,7 @@
 /**
  * Component object
  */
-const appComponent = {
+const appComponent: ng.IComponentOptions = {
   template: '<h1>Hello Angular TS!</h1>'
 }
 

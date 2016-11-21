@@ -1,5 +1,14 @@
 # Change Log
 
+## [3.1.4] - 2016-11-21
+
+### Deleted
+- Remove noUnusedParameters from tsconfig.json.
+
+### Modified
+- Add IComponentOptions interface to component object in app.component.ts.
+
+
 ## [3.1.3] - 2016-11-20
 
 ### Fixed

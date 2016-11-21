@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "rootDir": ".",
     "target": "es5"
   }
