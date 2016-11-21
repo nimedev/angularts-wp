@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.1.3] - 2016-11-20
+
+### Fixed
+- Move tslint to devDependencies.
+
+
 ## [3.1.2] - 2016-11-20
 
 ### Updated
