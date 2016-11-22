@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "3.1.4",
+  "version": "3.2.0",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "webpack",
@@ -79,8 +79,8 @@
     "stylelint": "7.6.0",
     "stylelint-config-nimedev": "7.0.0",
     "ts-loader": "1.2.2",
-    "tslint": "3.15.1",
-    "tslint-loader": "2.1.5",
+    "tslint": "4.0.1",
+    "tslint-loader": "3.0.0",
     "typescript": "2.0.10",
     "typings": "2.0.0",
     "url-loader": "0.5.7",

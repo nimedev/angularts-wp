@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.2.0] - 2016-11-22
+
+### Updated
+- Upgrade tslint and tslint-loader.
+
+
 ## [3.1.4] - 2016-11-21
 
 ### Deleted
