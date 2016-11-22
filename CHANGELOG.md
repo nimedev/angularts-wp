@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.2.1] - 2016-11-22
+
+### Modified
+- Change yarn version and remove typings step in README.md file.
+
+
 ## [3.2.0] - 2016-11-22
 
 ### Updated

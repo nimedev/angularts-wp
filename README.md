@@ -24,7 +24,7 @@ If you don't have Node.js installed go to [nodejs](https://nodejs.org/en/downloa
 ```sh
 yarn --version
 ```
-The version should be at or above 0.15.1
+The version should be at or above 0.17.8
 
 If you don't have yarn installed go to [yarn](https://yarnpkg.com/en/docs/install) and install the appropiate version.
 
@@ -34,11 +34,6 @@ If you don't have yarn installed go to [yarn](https://yarnpkg.com/en/docs/instal
 yarn
 ```
 
-#### 4) Install `typings` for TypeScript intellisense.
-```sh
-# cd to your project folder
-yarn run postinstall
-```
 
 ## Workflow
 
