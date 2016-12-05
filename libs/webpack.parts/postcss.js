@@ -17,10 +17,9 @@ const stylelint = require('stylelint')
 /**
  * Config function used in webpack.config files for postcss loader.
  */
-module.exports = webpack => {
+module.exports = () => {
   return [
     atImport({
-      addDependencyTo: webpack,
       plugins: [
         stylelint
       ]

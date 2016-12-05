@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "webpack",
@@ -38,7 +38,7 @@
     "node": ">=6.9.1 <7.0.0"
   },
   "dependencies": {
-    "angular": "1.5.8",
+    "angular": "1.5.9",
     "niduscss-base": "1.0.1",
     "niduscss-elements-form": "1.3.0",
     "niduscss-elements-link": "1.1.1",
@@ -56,8 +56,8 @@
     "autoprefixer": "6.5.3",
     "clean-webpack-plugin": "0.1.14",
     "copy-webpack-plugin": "4.0.1",
-    "css-loader": "0.26.0",
-    "eslint": "3.10.2",
+    "css-loader": "0.26.1",
+    "eslint": "3.11.1",
     "eslint-config-nimedev": "3.1.0",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.9.0",
@@ -70,8 +70,8 @@
     "postcss-color-function": "2.0.1",
     "postcss-custom-media": "5.0.1",
     "postcss-custom-properties": "5.0.1",
-    "postcss-import": "8.2.0",
-    "postcss-loader": "1.1.1",
+    "postcss-import": "9.0.0",
+    "postcss-loader": "1.2.0",
     "postcss-mixins": "5.4.0",
     "postcss-nested": "1.0.0",
     "pre-commit": "1.1.3",
@@ -79,14 +79,14 @@
     "stylelint": "7.6.0",
     "stylelint-config-nimedev": "7.0.0",
     "ts-loader": "1.2.2",
-    "tslint": "4.0.1",
-    "tslint-loader": "3.0.0",
+    "tslint": "4.0.2",
+    "tslint-loader": "3.3.0",
     "typescript": "2.0.10",
     "typings": "2.0.0",
     "url-loader": "0.5.7",
     "webpack": "1.13.3",
     "webpack-dev-server": "1.16.2",
-    "webpack-merge": "0.17.0",
-    "webpack-validator": "2.2.9"
+    "webpack-merge": "1.0.2",
+    "webpack-validator": "2.2.11"
   }
 }

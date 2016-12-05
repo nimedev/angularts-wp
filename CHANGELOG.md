@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.3.0] - 2016-12-05
+
+### Updated
+- Upgrade angular, css-loader, eslint, postcss-import, postcss-loader, tslint, tslint-loader, webpack-merge and webpack-validator.
+
+
 ## [3.2.1] - 2016-11-22
 
 ### Modified
