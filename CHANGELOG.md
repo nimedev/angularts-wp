@@ -1,5 +1,12 @@
 # Change Log
 
+## [3.3.1] - 2016-12-12
+
+### Updated
+- Use node v6.9.2.
+- Upgrade angular, eslint, ts-loader, typescript, webpack, webpack-merge and webpack-validator.
+
+
 ## [3.3.0] - 2016-12-05
 
 ### Updated
