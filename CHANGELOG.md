@@ -1,5 +1,14 @@
 # Change Log
 
+## [3.4.0] - 2016-12-27
+
+### Modified
+- Update tsconfig.json and typings.json.
+
+### Updated
+- Upgrade angular, eslint, postcss-loader, postcss-mixins, pre-commit, autoprefixer, ts-loader, tslint, typings, webpack-merge, webpack-validator and stylelint.
+
+
 ## [3.3.1] - 2016-12-12
 
 ### Updated
