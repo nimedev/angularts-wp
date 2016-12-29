@@ -1,5 +1,14 @@
 # Change Log
 
+## [4.2.0] - 2016-12-29
+
+### Added
+- Add tslint-config-nimedev rules.
+
+### Modified
+- Change angular version in docs to 1.6.
+
+
 ## [4.1.0] - 2016-12-28
 
 ### Updated
