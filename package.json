@@ -1,7 +1,7 @@
 {
   "name": "angularts-wp",
   "version": "4.1.0",
-  "description": "A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS",
+  "description": "A starting point for building web applications with AngularJS 1.6 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "webpack",
     "lint": "npm run lint:css && npm run lint:js && npm run lint:ts",

@@ -1,6 +1,6 @@
 # AngularTS WP
 
-> A starting point for building web applications with AngularJS 1.5 using TypeScript, Webpack and PostCSS.
+> A starting point for building web applications with AngularJS 1.6 using TypeScript, Webpack and PostCSS.
 
 
 ## Prerequisites
@@ -61,7 +61,7 @@ export ANGULARTS_WP_PORT=8000
 yarn start
 # After this, a message indicate the url to run the application
 ```
-This create a server using `webpack-dev-server` to serve the application in development environment.  
+This create a server using `webpack-dev-server` to serve the application in development environment.
 The browser reloads the app when any file change.
 
 ### Production workflow
