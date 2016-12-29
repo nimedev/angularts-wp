@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.1.0] - 2016-12-28
+
+### Updated
+- Improve vscode settings.
+
+
 ## [4.0.1] - 2016-12-28
 
 ### Added
