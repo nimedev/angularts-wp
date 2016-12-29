@@ -1,21 +1,17 @@
 /**
  * @module setup-css
- * @memberOf webpack.parts
+ * @member webpack.parts
  */
 
 /**
  * Configuration for css files
  */
-module.exports = paths => {
-  return {
-    module: {
-      loaders: [
-        {
-          test: /\.css$/,
-          loaders: ['style', 'css', 'postcss'],
-          include: paths
-        }
-      ]
-    }
+module.exports = paths => ({
+  module: {
+    loaders: [{
+      test: /\.css$/,
+      loaders: ['style', 'css', 'postcss'],
+      include: paths
+    }]
   }
-}
+})

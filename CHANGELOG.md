@@ -1,5 +1,16 @@
 # Change Log
 
+## [4.0.0] - 2016-12-28
+
+### Added
+- Add .jsbeautifyrc file.
+- Add .editorconfig file.
+
+### Modified
+- Update tslint rules.
+- Implement eslint-config-nimedev-base.
+
+
 ## [3.4.0] - 2016-12-27
 
 ### Modified

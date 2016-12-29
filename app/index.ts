@@ -4,10 +4,10 @@
  */
 /// <reference path="./typings/index.d.ts" />
 
+import 'angular'
+
 // Import base styles before all components
 import './styles'
-
-import 'angular'
 import constants from './constants'
 import appModule from './app.module'
 

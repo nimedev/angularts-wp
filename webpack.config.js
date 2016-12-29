@@ -21,15 +21,14 @@ const PATHS = {
   dist: path.join(__dirname, 'dist'),
   images: path.join(__dirname, 'public/assets/img'),
   fonts: path.join(__dirname, 'public/assets/fonts'),
-  copy: [
-    {
-      from: './public/assets',
-      to: 'assets'
-    }, {
-      from: './public/favicon.ico'
-    }, {
-      from: './public/robots.txt'
-    }]
+  copy: [{
+    from: './public/assets',
+    to: 'assets'
+  }, {
+    from: './public/favicon.ico'
+  }, {
+    from: './public/robots.txt'
+  }]
 }
 
 // Common settings for webpack
@@ -44,8 +43,8 @@ const common = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-        'ANGULARTS_WP_API_URL': JSON.stringify(apiUrl)
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        ANGULARTS_WP_API_URL: JSON.stringify(apiUrl)
       }
     }),
     new HtmlWebpackPlugin({
@@ -64,53 +63,42 @@ const common = {
     modulesDirectories: ['node_modules']
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.ts$/,
-        loader: 'tslint'
-      },
-      {
-        test: /\.css$/,
-        loaders: ['postcss']
-      }
-    ],
-    loaders: [
-      {
-        test: /\.ts$/,
-        loader: 'ts',
-        include: PATHS.app
-      },
-      {
-        test: /\.html$/,
-        loader: 'html',
-        include: PATHS.app
-      },
-      {
-        test: /\.json$/,
-        loader: 'json',
-        include: PATHS.app
-      },
-      {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url?limit=10000&mimetype=application/font-woff',
-        include: PATHS.fonts
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file',
-        include: PATHS.fonts
-      },
-      {
-        test: /\.jpg$/,
-        loader: 'file',
-        include: PATHS.images
-      },
-      {
-        test: /\.png$/,
-        loader: 'url',
-        include: PATHS.images
-      }
-    ]
+    preLoaders: [{
+      test: /\.ts$/,
+      loader: 'tslint'
+    }, {
+      test: /\.css$/,
+      loaders: ['postcss']
+    }],
+    loaders: [{
+      test: /\.ts$/,
+      loader: 'ts',
+      include: PATHS.app
+    }, {
+      test: /\.html$/,
+      loader: 'html',
+      include: PATHS.app
+    }, {
+      test: /\.json$/,
+      loader: 'json',
+      include: PATHS.app
+    }, {
+      test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: 'url?limit=10000&mimetype=application/font-woff',
+      include: PATHS.fonts
+    }, {
+      test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: 'file',
+      include: PATHS.fonts
+    }, {
+      test: /\.jpg$/,
+      loader: 'file',
+      include: PATHS.images
+    }, {
+      test: /\.png$/,
+      loader: 'url',
+      include: PATHS.images
+    }]
   },
   postcss: parts.postcss
 }
@@ -129,8 +117,7 @@ switch (process.env.npm_lifecycle_event) {
     break
   default:
     config = merge(
-      common,
-      {
+      common, {
         devtool: 'eval-source-map'
       },
       parts.setupCSS(PATHS.app),

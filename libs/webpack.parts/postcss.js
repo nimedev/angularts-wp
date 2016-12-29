@@ -1,9 +1,8 @@
 /**
  * @module postcss
- * @memberOf webpack.parts
+ * @member webpack.parts
  */
 
-// Postcss plugins
 const atImport = require('postcss-import')
 const autoprefixer = require('autoprefixer')
 const calc = require('postcss-calc')
@@ -17,19 +16,19 @@ const stylelint = require('stylelint')
 /**
  * Config function used in webpack.config files for postcss loader.
  */
-module.exports = () => {
-  return [
-    atImport({
-      plugins: [
-        stylelint
-      ]
-    }),
-    mixins,
-    customMedia,
-    customProperties,
-    nested,
-    calc,
-    colorFunction,
-    autoprefixer({ browsers: ['last 2 versions'] })
-  ]
-}
+module.exports = () => ([
+  atImport({
+    plugins: [
+      stylelint
+    ]
+  }),
+  mixins,
+  customMedia,
+  customProperties,
+  nested,
+  calc,
+  colorFunction,
+  autoprefixer({
+    browsers: ['last 2 versions']
+  })
+])

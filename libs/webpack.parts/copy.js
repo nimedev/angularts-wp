@@ -1,18 +1,15 @@
 /**
  * @module copy
- * @memberOf webpack.parts
+ * @member webpack.parts
  */
 
-// npm modules
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 /**
  * Configuration for CopyWebpackPlugin
  */
-module.exports = path => {
-  return {
-    plugins: [
-      new CopyWebpackPlugin(path)
-    ]
-  }
-}
+module.exports = path => ({
+  plugins: [
+    new CopyWebpackPlugin(path)
+  ]
+})
