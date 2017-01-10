@@ -1,5 +1,14 @@
 # Change Log
 
+## [4.4.0] - 2017-01-10
+
+### Modified
+- Improve documentation for environment variables.
+
+### Updated
+- Upgrade clean-webpack-plugin, eslint, postcss-import, tslint and webpack-merge.
+
+
 ## [4.3.0] - 2017-01-05
 
 ### Updated

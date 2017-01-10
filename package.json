@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "description": "A starting point for building web applications with AngularJS 1.6 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "webpack",

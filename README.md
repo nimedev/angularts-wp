@@ -39,13 +39,25 @@ yarn
 
 ### Environment variables
 
-#### Host configuration
-- `NODE_ENV="development"`. Environment for server.
-- `ANGULARTS_WP_HOST=localIP`. Host of webapplication.
-- `ANGULARTS_WP_PORT=3000`. Port of webapplication (Use in development).
+```sh
+##
+# angularts-wp environment variables
+##
 
-#### Access URLs
-- `ANGULARTS_WP_API_URL="http://${ip.address()}:${8080}/api"`. Url of API.
+# Host configuration
+## Environment for server.
+export NODE_ENV="development"
+## Host of webapplication.
+export ANGULARTS_WP_HOST=localIP
+## Port of webapplication (Use in development).
+export ANGULARTS_WP_PORT=3000
+
+# Access URLs
+## Url of API.
+export ANGULARTS_WP_API_URL="http://${ip.address()}:${8080}/api"
+```
+
+You can copy this script in bashrc file, modify the variables and delete variables that don't need modification or are undefined.
 
 To change any of this variables:
 
