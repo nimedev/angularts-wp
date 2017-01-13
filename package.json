@@ -58,7 +58,7 @@
     "copy-webpack-plugin": "4.0.1",
     "css-loader": "0.26.1",
     "eslint": "3.13.1",
-    "eslint-config-nimedev-base": "2.0.0",
+    "eslint-config-nimedev-base": "2.2.0",
     "eslint-plugin-import": "2.2.0",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.9.0",
@@ -72,7 +72,7 @@
     "postcss-custom-media": "5.0.1",
     "postcss-custom-properties": "5.0.1",
     "postcss-import": "9.1.0",
-    "postcss-loader": "1.2.1",
+    "postcss-loader": "1.2.2",
     "postcss-mixins": "5.4.1",
     "postcss-nested": "1.0.0",
     "pre-commit": "1.2.2",
@@ -83,12 +83,12 @@
     "tslint": "4.3.1",
     "tslint-config-nimedev": "1.0.0",
     "tslint-loader": "3.3.0",
-    "typescript": "2.1.4",
+    "typescript": "2.1.5",
     "typings": "2.1.0",
     "url-loader": "0.5.7",
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
-    "webpack-merge": "2.3.1",
+    "webpack-merge": "2.4.0",
     "webpack-validator": "2.3.0"
   }
 }
