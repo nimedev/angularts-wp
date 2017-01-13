@@ -1,5 +1,14 @@
 # Change Log
 
+## [4.5.0] - 2017-01-12
+
+### Added
+- Add style guide section to README.md file.
+
+### Updated
+- Upgrade eslint-config-nimedev-base, postcss-loader, typescript and webpack-merge.
+
+
 ## [4.4.0] - 2017-01-10
 
 ### Modified

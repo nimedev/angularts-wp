@@ -122,11 +122,21 @@ yarn run lint
 ```
 
 
-## Styling
+## Style Guides
 
-#### CSS Framework **[niduscss-framework](https://github.com/nimedev/niduscss-framework)**.
+### TypeScript
 
-#### Naming conventions **[SuitCSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)**.
+**[Nimedev TypeScript style guide](https://github.com/nimedev/typescript)**.
+
+### JavaScript
+
+**[Nimedev JavaScript style guide](https://github.com/nimedev/javascript)**.
+
+### CSS
+
+**[niduscss-framework](https://github.com/nimedev/niduscss-framework)**.
+
+**[SuitCSS naming conventions](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md)**.
 
 
 ## Angular HTML5 mode or pretty URLs
