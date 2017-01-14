@@ -1,5 +1,15 @@
 # Change Log
 
+## [4.6.0] - 2017-01-14
+
+### Added
+- Add install:dev scripts.
+
+### Modified
+- Improve dev-server module in webpack.parts lib.
+- Updated workflow documentation.
+
+
 ## [4.5.0] - 2017-01-12
 
 ### Added

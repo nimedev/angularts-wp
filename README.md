@@ -28,12 +28,6 @@ The version should be at or above 0.18.0
 
 If you don't have yarn installed go to [yarn](https://yarnpkg.com/en/docs/install) and install the appropiate version.
 
-#### 3) Install the workspace dependencies.
-```sh
-# cd to your project folder
-yarn
-```
-
 
 ## Workflow
 
@@ -67,25 +61,51 @@ export ANGULARTS_WP_PORT=8000
 
 ### Development workflow
 
+#### Install the workspace dependencies.
+```sh
+# cd to your project folder
+yarn
+```
+
 #### Static server with live reload
+Create a server using `webpack-dev-server` to serve the application in development environment.
+The browser reloads the app when any file change:
 ```sh
 # cd to your project folder
 yarn start
 # After this, a message indicate the url to run the application
 ```
-This create a server using `webpack-dev-server` to serve the application in development environment.
-The browser reloads the app when any file change.
 
 ### Production workflow
+
+You can use two ways:
+
+#### The repository is in `production` server
+- The server must have set the environment variable: `NODE_ENV='production'`.
+- Run:
 ```sh
 # cd to your project folder
-# Set environment variable for production
-export NODE_ENV='production'
+# Install the workspace dependencies.
+# This npm script force the installation of development dependencies.
+yarn install:dev
 
 # Build
 yarn run build
 ```
-Put all in `dist` folder ready for production.
+After run this script the `dist` folder is ready for production.
+> If update the repository run the previous script again.
+
+#### Build in `development` environment and upload the files to production server.
+- Verify that all dependencies are installed.
+- Set the environment variable with production values
+- Build the application
+```sh
+# cd to your project folder
+yarn run build
+```
+After this, all files are ready to upload in any production server.
+
+:warning: Reset the environment variables to `development` values
 
 ### Install/Uninstall/Update dependencies
 Follow this rules to update dependencies:
