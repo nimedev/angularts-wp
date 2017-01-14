@@ -81,7 +81,7 @@ yarn start
 You can use two ways:
 
 #### The repository is in `production` server
-- Set the environment variable with production values. `NODE_ENV='production'`, ...
+- Set the environment variables with production values. `export NODE_ENV='production'`, ...
 - Run:
 ```sh
 # cd to your project folder
@@ -93,7 +93,7 @@ yarn install:dev
 yarn run build
 ```
 After run this script the `dist` folder is ready for production.
-> If update the repository run the previous script again.
+> Run the previous script again every time that update the repository.
 
 #### Build in `development` environment and upload the files to production server.
 - Verify that all dependencies are installed.

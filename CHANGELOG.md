@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.6.2] - 2017-01-14
+
+### Fixed
+- Fix documentation issues.
+
+
 ## [4.6.1] - 2017-01-14
 
 ### Fixed
