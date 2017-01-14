@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.6.3] - 2017-01-14
+
+### Fixed
+- Enable sourcemaps in tsconfig file.
+
+
 ## [4.6.2] - 2017-01-14
 
 ### Fixed

@@ -3,6 +3,7 @@
     "lib": ["es2015", "dom"],
     "noUnusedLocals": true,
     "rootDir": ".",
-    "target": "es5"
+    "target": "es5",
+    "sourceMap": true
   }
 }
