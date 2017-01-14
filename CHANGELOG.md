@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.6.1] - 2017-01-14
+
+### Fixed
+- Fix issues in workflow documentation.
+
+
 ## [4.6.0] - 2017-01-14
 
 ### Added

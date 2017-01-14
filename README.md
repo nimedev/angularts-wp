@@ -81,7 +81,7 @@ yarn start
 You can use two ways:
 
 #### The repository is in `production` server
-- The server must have set the environment variable: `NODE_ENV='production'`.
+- Set the environment variable with production values. `NODE_ENV='production'`, ...
 - Run:
 ```sh
 # cd to your project folder
@@ -103,7 +103,7 @@ After run this script the `dist` folder is ready for production.
 # cd to your project folder
 yarn run build
 ```
-After this, all files are ready to upload in any production server.
+After this, all files are ready in `dist` folder to upload in any production server.
 
 :warning: Reset the environment variables to `development` values
 
