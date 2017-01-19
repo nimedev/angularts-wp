@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.7.0] - 2017-01-19
+
+### Updated
+- Upgrade devDep: eslint-config-nimedev-base.
+
+
 ## [4.6.3] - 2017-01-14
 
 ### Fixed
