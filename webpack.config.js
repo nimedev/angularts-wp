@@ -4,142 +4,112 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ip = require('ip')
-const merge = require('webpack-merge')
 const opener = require('opener')
-const validate = require('webpack-validator')
 const webpack = require('webpack')
-
-// Configuration parts
+const merge = require('webpack-merge')
 const parts = require('./libs/webpack.parts')
 
-// Constants & Variables
 const host = process.env.ANGULARTS_WP_HOST || ip.address()
 const port = process.env.ANGULARTS_WP_PORT || 3000
 const apiUrl = process.env.ANGULARTS_WP_API_URL || `http://${ip.address()}:${8080}/api`
 const PATHS = {
   app: path.join(__dirname, 'app'),
   dist: path.join(__dirname, 'dist'),
-  images: path.join(__dirname, 'public/assets/img'),
-  fonts: path.join(__dirname, 'public/assets/fonts'),
-  copy: [{
-    from: './public/assets',
-    to: 'assets'
-  }, {
-    from: './public/favicon.ico'
-  }, {
-    from: './public/robots.txt'
-  }]
+  images: path.join(__dirname, 'app/assets/images'),
+  fonts: path.join(__dirname, 'app/assets/fonts')
 }
 
-// Common settings for webpack
-const common = {
-  entry: {
-    app: PATHS.app
+const common = merge([
+  // Common settings
+  {
+    entry: {
+      app: PATHS.app
+    },
+    output: {
+      path: PATHS.dist,
+      filename: '[name].js'
+    },
+    plugins: [
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+          ANGULARTS_WP_API_URL: JSON.stringify(apiUrl)
+        }
+      }),
+      new HtmlWebpackPlugin({
+        template: './app/index.html'
+      })
+    ],
+    resolve: {
+      extensions: ['.ts', '.js', '.json', '.css']
+    },
+    module: {
+      rules: [{
+        test: /\.html$/,
+        include: PATHS.app,
+
+        use: 'html-loader'
+      }]
+    }
   },
-  output: {
-    path: PATHS.dist,
-    filename: '[name].js'
-  },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-        ANGULARTS_WP_API_URL: JSON.stringify(apiUrl)
-      }
+
+  parts.lintCSS(PATHS.app),
+  parts.loadTS(PATHS.app),
+  parts.loadImages(PATHS.images),
+  parts.loadFonts(PATHS.fonts),
+  parts.loadAssets(PATHS.app)
+])
+
+module.exports = ({
+  target
+}) => {
+  // Return production configuration
+  if (target === 'production') {
+    return merge([
+      common,
+      {
+        output: {
+          filename: '[name].[chunkhash].js'
+        },
+        plugins: [
+          new webpack.HashedModuleIdsPlugin()
+        ]
+      },
+      parts.extractBundles(),
+      parts.clean(PATHS.dist),
+      parts.loadJS({
+        paths: PATHS.app
+      }),
+      parts.minify(),
+      parts.extractCSS(PATHS.app)
+    ])
+  }
+
+  // Run opener
+  opener(`http://${host}:${port}`)
+
+  // Return development configurations
+  return merge([
+    common,
+    {
+      plugins: [
+        new webpack.NamedModulesPlugin()
+      ]
+    },
+    parts.generateSourcemaps('#inline-source-map'),
+    parts.loadCSS(PATHS.app),
+    parts.devServer({
+      // Customize host/port here if needed
+      host,
+      port
     }),
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-      hash: true,
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true
+    parts.loadJS({
+      paths: PATHS.app,
+      eslintOptions: {
+        // Emit warnings over errors to avoid crashing
+        // HMR on error.
+        emitWarning: true
       }
     })
-  ],
-  resolve: {
-    extensions: ['', '.ts', '.js', '.json', '.css']
-  },
-  resolveLoader: {
-    modulesDirectories: ['node_modules']
-  },
-  module: {
-    preLoaders: [{
-      test: /\.ts$/,
-      loader: 'tslint'
-    }, {
-      test: /\.js?$/,
-      loaders: ['eslint']
-    }, {
-      test: /\.css$/,
-      loaders: ['postcss']
-    }],
-    loaders: [{
-      test: /\.js$/,
-      loader: 'babel',
-      include: PATHS.app
-    }, {
-      test: /\.ts$/,
-      loader: 'ts',
-      include: PATHS.app
-    }, {
-      test: /\.html$/,
-      loader: 'html',
-      include: PATHS.app
-    }, {
-      test: /\.json$/,
-      loader: 'json',
-      include: PATHS.app
-    }, {
-      test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'url?limit=10000&mimetype=application/font-woff',
-      include: PATHS.fonts
-    }, {
-      test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      loader: 'file',
-      include: PATHS.fonts
-    }, {
-      test: /\.jpg$/,
-      loader: 'file',
-      include: PATHS.images
-    }, {
-      test: /\.png$/,
-      loader: 'url',
-      include: PATHS.images
-    }]
-  },
-  postcss: parts.postcss
+  ])
 }
-
-// Detect how npm is run and branch based on that
-let config
-switch (process.env.npm_lifecycle_event) {
-  case 'build':
-    config = merge(
-      common,
-      parts.clean(PATHS.dist),
-      parts.minify(),
-      parts.extractCSS(PATHS.app),
-      parts.copy(PATHS.copy)
-    )
-    break
-  default:
-    config = merge(
-      common, {
-        devtool: '#inline-source-map'
-      },
-      parts.setupCSS(PATHS.app),
-      parts.devServer({
-        // Customize host/port here if needed
-        host,
-        port
-      })
-    )
-
-    // Run opener
-    opener(`http://${host}:${port}`)
-}
-
-/**
- * Webpack configuration
- */
-module.exports = validate(config)

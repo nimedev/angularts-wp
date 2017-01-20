@@ -1,25 +1,34 @@
 /**
+ * Group parts of webpack configurations
  * @module webpack.parts
  */
 
-// Configuration parts
 const clean = require('./clean')
-const copy = require('./copy')
 const devServer = require('./dev-server')
+const extractBundles = require('./extract-bundles')
 const extractCSS = require('./extract-css')
+const generateSourcemaps = require('./generate-sourcemaps')
+const lintCSS = require('./lint-css')
+const loadAssets = require('./load-assets')
+const loadCSS = require('./load-css')
+const loadFonts = require('./load-fonts')
+const loadImages = require('./load-images')
+const loadJS = require('./load-js')
+const loadTS = require('./load-ts')
 const minify = require('./minify')
-const postcss = require('./postcss')
-const setupCSS = require('./setup-css')
 
-/**
- * Group parts of webpack configurations
- */
 module.exports = {
   clean,
-  copy,
   devServer,
+  extractBundles,
   extractCSS,
-  minify,
-  postcss,
-  setupCSS
+  generateSourcemaps,
+  lintCSS,
+  loadAssets,
+  loadCSS,
+  loadFonts,
+  loadImages,
+  loadJS,
+  loadTS,
+  minify
 }

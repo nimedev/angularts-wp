@@ -1,7 +1,0 @@
-{
-  "extends": "nimedev-base",
-  "env": {
-    "browser": true
-  },
-  "parser": "babel-eslint"
-}

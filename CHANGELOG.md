@@ -1,5 +1,11 @@
 # Change Log
 
+## [5.0.0] - 2017-01-22
+
+### Modified
+- Migrate to webpack 2.
+
+
 ## [4.8.0] - 2017-01-19
 
 ### Added

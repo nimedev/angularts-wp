@@ -6,6 +6,10 @@
 
 import 'angular'
 
+// Import assets to bundle with webpack
+import './favicon.ico'
+import './robots.txt'
+
 // Import base styles before all components
 import './styles'
 import constants from './constants'

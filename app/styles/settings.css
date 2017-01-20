@@ -80,29 +80,23 @@
 /* Custom media queries (Mobile first)
    ========================================================================== */
 
-/* xsmall devices (portrait mobiles) */
+/* Portrait mobiles */
 
-@custom-media --xxsmall-viewport (min-width: 22.5rem);
-@custom-media --xxsmall-viewport-max (max-width: 22.4375rem);
-@custom-media --xsmall-viewport (min-width: 30rem);
-@custom-media --xsmall-viewport-max (max-width: 29.9375rem);
+@custom-media --for-phone-only (max-width: 37.4375rem);
 
-/* small devices (Portrait tablets, landscape mobiles) */
+/* Portrait tablets, landscape mobiles */
 
-@custom-media --small-viewport (min-width: 37.5rem);
-@custom-media --small-viewport-max (max-width: 37.4375rem);
+@custom-media --for-tablet-portrait-up (min-width: 37.5rem);
+@custom-media --for-tablet-portrait-down (max-width: 56.1875rem);
 
-/* medium devices */
+/* Landscape tablets */
 
-@custom-media --medium-viewport (min-width: 60rem);
-@custom-media --medium-viewport-max (max-width: 59.9375rem);
+@custom-media --for-tablet-landscape-up (min-width: 56.25rem);
 
-/* large devices */
+/* Desktops */
 
-@custom-media --large-viewport (min-width: 80rem);
-@custom-media --large-viewport-max (max-width: 79.9375rem);
+@custom-media --for-desktop-up (min-width: 75rem);
 
-/* extra large devices */
+/* Large desktops */
 
-@custom-media --xlarge-viewport (min-width: 120rem);
-@custom-media --xlarge-viewport-max (max-width: 119.9375rem);
+@custom-media --for-big-desktop-up (min-width: 112.5rem);
