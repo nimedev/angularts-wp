@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.8.0] - 2017-01-19
+
+### Added
+- Add babel support.
+
+
 ## [4.7.0] - 2017-01-19
 
 ### Updated

@@ -4,6 +4,7 @@
     "noUnusedLocals": true,
     "rootDir": ".",
     "target": "es5",
-    "sourceMap": true
+    "sourceMap": true,
+    "allowJs": true
   }
 }

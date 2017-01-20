@@ -67,10 +67,17 @@ const common = {
       test: /\.ts$/,
       loader: 'tslint'
     }, {
+      test: /\.js?$/,
+      loaders: ['eslint']
+    }, {
       test: /\.css$/,
       loaders: ['postcss']
     }],
     loaders: [{
+      test: /\.js$/,
+      loader: 'babel',
+      include: PATHS.app
+    }, {
       test: /\.ts$/,
       loader: 'ts',
       include: PATHS.app
