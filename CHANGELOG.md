@@ -1,5 +1,11 @@
 # Change Log
 
+## [5.1.1] - 2017-01-22
+
+### Fixed
+- Fix problem loading images in css files.
+
+
 ## [5.1.0] - 2017-01-22
 
 ### Updated

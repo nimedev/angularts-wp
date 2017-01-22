@@ -4,7 +4,6 @@
  */
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const webpack = require('webpack')
 
 /**
  * Configurations for ExtractTextPlugin
@@ -23,7 +22,10 @@ module.exports = paths => ({
           fallbackLoader: 'style-loader',
           loader: [{
             loader: 'css-loader',
-            options: {
+            query: {
+              import: false,
+              importLoaders: 1,
+
               // Use css nano options
               minimize: {
                 reduceIdents: {
@@ -39,16 +41,6 @@ module.exports = paths => ({
   },
   plugins: [
     // Output extracted CSS to a file
-    new ExtractTextPlugin('styles.[contenthash].css'),
-
-    // Used to set minification in css-loader until ExtractTextPlugin fix this issue
-    new webpack.LoaderOptionsPlugin({
-      minimize: {
-        reduceIdents: {
-          keyframes: false
-        },
-        zindex: false
-      }
-    })
+    new ExtractTextPlugin('styles.[contenthash].css')
   ]
 })

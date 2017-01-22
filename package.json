@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "A starting point for building web applications with AngularJS 1.6 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "export NODE_ENV='production' && webpack --env.target production",
@@ -111,11 +111,7 @@
   },
   "postcss": {
     "plugins": {
-      "postcss-import": {
-        "plugins": [
-          "stylelint"
-        ]
-      },
+      "postcss-import": {},
       "postcss-mixins": {},
       "postcss-custom-media": {},
       "postcss-custom-properties": {},

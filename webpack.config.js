@@ -14,9 +14,7 @@ const port = process.env.ANGULARTS_WP_PORT || 3000
 const apiUrl = process.env.ANGULARTS_WP_API_URL || `http://${ip.address()}:${8080}/api`
 const PATHS = {
   app: path.join(__dirname, 'app'),
-  dist: path.join(__dirname, 'dist'),
-  images: path.join(__dirname, 'app/assets/images'),
-  fonts: path.join(__dirname, 'app/assets/fonts')
+  dist: path.join(__dirname, 'dist')
 }
 
 const common = merge([
@@ -55,8 +53,8 @@ const common = merge([
 
   parts.lintCSS(PATHS.app),
   parts.loadTS(PATHS.app),
-  parts.loadImages(PATHS.images),
-  parts.loadFonts(PATHS.fonts),
+  parts.loadImages(PATHS.app),
+  parts.loadFonts(PATHS.app),
   parts.loadAssets(PATHS.app)
 ])
 

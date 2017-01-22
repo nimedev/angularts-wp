@@ -3,7 +3,6 @@
  * @member webpack.parts
  */
 
-const atImport = require('postcss-import')
 const stylelint = require('stylelint')
 
 module.exports = paths => ({
@@ -16,13 +15,7 @@ module.exports = paths => ({
       loader: 'postcss-loader',
       options: {
         ident: 'postcss',
-        plugins: () => ([
-          atImport({
-            plugins: [
-              stylelint
-            ]
-          })
-        ])
+        plugins: () => [stylelint]
       }
     }]
   }

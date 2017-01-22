@@ -16,7 +16,13 @@ module.exports = paths => ({
 
       use: [
         'style-loader',
-        'css-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            import: false,
+            importLoaders: 1
+          }
+        },
         'postcss-loader'
       ]
     }]
