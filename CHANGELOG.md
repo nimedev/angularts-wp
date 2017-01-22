@@ -1,5 +1,11 @@
 # Change Log
 
+## [5.1.0] - 2017-01-22
+
+### Updated
+- Upgrade devDep: autoprefixer.
+
+
 ## [5.0.0] - 2017-01-22
 
 ### Modified

@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "A starting point for building web applications with AngularJS 1.6 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "export NODE_ENV='production' && webpack --env.target production",
@@ -55,7 +55,7 @@
     "niduscss-utils-text": "1.3.2"
   },
   "devDependencies": {
-    "autoprefixer": "6.6.1",
+    "autoprefixer": "6.7.0",
     "babel-core": "6.22.1",
     "babel-eslint": "7.1.1",
     "babel-loader": "6.2.10",
