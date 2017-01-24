@@ -1,5 +1,12 @@
 # Change Log
 
+## [5.2.0] - 2017-01-24
+
+### Modified
+- Improve js-beautify settings.
+- Improve dev-server configuration for webpack.
+
+
 ## [5.1.1] - 2017-01-22
 
 ### Fixed
