@@ -13,6 +13,7 @@
 ## Install dependencies
 
 #### 1) Check `Node.js` version.
+
 ```sh
 node --version
 ```
@@ -21,6 +22,7 @@ The version should be at or above 6.9
 If you don't have Node.js installed go to [nodejs](https://nodejs.org/en/download/) and install the appropiate version or use [nvm](http://www.sergiolepore.net/2014/06/30/nvm-instalando-y-usando-node-version-manager/) (Recommended).
 
 #### 2) Check `yarn` version.
+
 ```sh
 yarn --version
 ```
@@ -62,16 +64,18 @@ export ANGULARTS_WP_PORT=8000
 ### Development workflow
 
 #### Install the workspace dependencies.
+
 ```sh
-# cd to your project folder
+# cd to project folder
 yarn
 ```
 
 #### Static server with live reload
 Create a server using `webpack-dev-server` to serve the application in development environment.
 The browser reloads the app when any file change:
+
 ```sh
-# cd to your project folder
+# cd to project folder
 yarn start
 # After this, a message indicate the url to run the application
 ```
@@ -83,8 +87,9 @@ You can use two ways:
 #### The repository is in `production` server
 - Set the environment variables with production values. `export NODE_ENV='production'`, ...
 - Run:
+
 ```sh
-# cd to your project folder
+# cd to project folder
 # Install the workspace dependencies.
 # This npm script force the installation of development dependencies.
 yarn install:dev
@@ -99,8 +104,9 @@ After run this script the `dist` folder is ready for production.
 - Verify that all dependencies are installed.
 - Set the environment variable with production values
 - Build the application
+
 ```sh
-# cd to your project folder
+# cd to project folder
 yarn build
 ```
 After this, all files are ready in `dist` folder to upload in any production server.
@@ -114,19 +120,18 @@ Follow this rules to update dependencies:
 
 ```sh
 # To install production dependencies
-# cd to your project folder
+# cd to project folder
 yarn add angular --exact
-```
-```sh
+
 # To install development dependencies
-# cd to your project folder
+# cd to project folder
 yarn add eslint --exact --dev
 ```
 
 - Uninstall dependencies
 
 ```sh
-# cd to your project folder
+# cd to project folder
 yarn remove angular
 ```
 
@@ -137,7 +142,7 @@ yarn remove angular
 To run eslint in console type:
 
 ```sh
-# cd to your project folder
+# cd to project folder
 yarn lint
 ```
 
