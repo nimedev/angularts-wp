@@ -1,5 +1,14 @@
 # Change Log
 
+## [5.3.0] - 2017-01-31
+
+### Modified
+- Improve README.md documentation.
+
+### Updated
+- Upgrade devDep: autoprefixer, eslint, file-loader, html-webpack-plugin, tslint, webpack and webpack-merge.
+
+
 ## [5.2.0] - 2017-01-24
 
 ### Modified
