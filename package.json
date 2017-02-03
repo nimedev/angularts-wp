@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "5.3.0",
+  "version": "5.4.0",
   "description": "A starting point for building web applications with AngularJS 1.6 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "export NODE_ENV='production' && webpack --env.target production",
@@ -84,7 +84,7 @@
     "pre-commit": "1.2.2",
     "style-loader": "0.13.1",
     "stylelint": "7.8.0",
-    "stylelint-config-nimedev": "7.0.0",
+    "stylelint-config-niduscss": "1.0.0",
     "ts-loader": "2.0.0",
     "tslint": "4.4.2",
     "tslint-config-nimedev": "1.0.0",
@@ -126,6 +126,6 @@
     }
   },
   "stylelint": {
-    "extends": "stylelint-config-nimedev"
+    "extends": "stylelint-config-niduscss"
   }
 }

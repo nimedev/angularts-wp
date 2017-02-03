@@ -4988,9 +4988,9 @@ stylehacks@^2.3.0:
     text-table "^0.2.0"
     write-file-stdout "0.0.2"
 
-stylelint-config-nimedev@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-nimedev/-/stylelint-config-nimedev-7.0.0.tgz#b71f016a64b293f72e94771508db7c31c7d17d0a"
+stylelint-config-niduscss@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-niduscss/-/stylelint-config-niduscss-1.0.0.tgz#d683e722d5cc955d44cd628e36940653b87b4b7f"
 
 stylelint@7.8.0:
   version "7.8.0"

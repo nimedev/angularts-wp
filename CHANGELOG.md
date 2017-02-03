@@ -1,5 +1,14 @@
 # Change Log
 
+## [5.4.0] - 2017-02-02
+
+### Deleted
+- Remove .jsbeautifyrc file.
+
+### Updated
+- Upgrade devDep: postcss-color-function, postcss-custom-properties, stylelint and webpack-dev-server
+
+
 ## [5.3.0] - 2017-01-31
 
 ### Modified
