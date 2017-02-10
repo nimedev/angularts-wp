@@ -3366,10 +3366,6 @@ niduscss-elements-typography@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/niduscss-elements-typography/-/niduscss-elements-typography-1.1.2.tgz#c127d18851f5924dc82ad400b4efa39dabb85eec"
 
-niduscss-lib-mixins@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/niduscss-lib-mixins/-/niduscss-lib-mixins-1.4.0.tgz#370eaa3df998f0ba686ad3dda4726563e2c7a74e"
-
 niduscss-utils-align@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/niduscss-utils-align/-/niduscss-utils-align-1.4.0.tgz#194abf9e505106e53ddbd34ea882a5197b626df3"

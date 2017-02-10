@@ -1,5 +1,15 @@
 # Change Log
 
+## [5.5.0] - 2017-02-10
+
+### Deleted
+- Remove niduscss-lib-mixins dependency.
+
+### Updated
+- Upgrade dep: angular, niduscss-utils-align, niduscss-utils-shadow and niduscss-utils-text.
+- Upgrade devDep: eslint and typescript.
+
+
 ## [5.4.0] - 2017-02-02
 
 ### Deleted
