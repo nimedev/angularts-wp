@@ -74,9 +74,9 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-angular@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.1.tgz#a7b6d763a74c157325692619e97257e69d9b6a27"
+angular@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.2.tgz#d0b677242ac4bf9ae81424297c6320973af4bb5a"
 
 ansi-align@^1.1.0:
   version "1.1.0"
@@ -3370,9 +3370,11 @@ niduscss-lib-mixins@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/niduscss-lib-mixins/-/niduscss-lib-mixins-1.4.0.tgz#370eaa3df998f0ba686ad3dda4726563e2c7a74e"
 
-niduscss-utils-align@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/niduscss-utils-align/-/niduscss-utils-align-1.3.1.tgz#9e865be191f0ea101914803bf8aa4acd35959445"
+niduscss-utils-align@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/niduscss-utils-align/-/niduscss-utils-align-1.4.0.tgz#194abf9e505106e53ddbd34ea882a5197b626df3"
+  dependencies:
+    niduscss-utils-mixins "1.0.0"
 
 niduscss-utils-buttons@1.0.1:
   version "1.0.1"
@@ -3386,17 +3388,25 @@ niduscss-utils-flex@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/niduscss-utils-flex/-/niduscss-utils-flex-1.1.0.tgz#7deb6866d30859b15aee7df2cba09998dffcac71"
 
-niduscss-utils-shadow@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/niduscss-utils-shadow/-/niduscss-utils-shadow-1.3.2.tgz#87e1b49d8af889796397b11fb82a263dead9c19d"
+niduscss-utils-mixins@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/niduscss-utils-mixins/-/niduscss-utils-mixins-1.0.0.tgz#84301596f27ce31c142c7a7b6fd654d8bcda0575"
+
+niduscss-utils-shadow@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/niduscss-utils-shadow/-/niduscss-utils-shadow-1.4.0.tgz#7dbd84de9a6cdfcb0f2302e60b62b8c7ae3b213b"
+  dependencies:
+    niduscss-utils-mixins "1.0.0"
 
 niduscss-utils-state@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/niduscss-utils-state/-/niduscss-utils-state-1.1.1.tgz#ff7859040991635456c4e400fefbbcc1c395a24c"
 
-niduscss-utils-text@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/niduscss-utils-text/-/niduscss-utils-text-1.3.2.tgz#e03de2bbead93bc0268125c52ac57d4ff2d26d5f"
+niduscss-utils-text@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/niduscss-utils-text/-/niduscss-utils-text-1.4.0.tgz#def1b9353d5ef99186455dbbf55982b5b9a46e6c"
+  dependencies:
+    niduscss-utils-mixins "1.0.0"
 
 no-case@^2.2.0:
   version "2.3.1"
@@ -5251,13 +5261,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@2.1.6:
+typescript@2.1.6, typescript@^2.1.4:
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.6.tgz#40c7e6e9e5da7961b7718b55505f9cac9487a607"
-
-typescript@^2.1.4:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.5.tgz#6fe9479e00e01855247cea216e7561bafcdbcd4a"
 
 typings-core@^2.2.0:
   version "2.2.0"
