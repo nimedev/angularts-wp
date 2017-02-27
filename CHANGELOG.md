@@ -1,5 +1,11 @@
 # Change Log
 
+## [5.6.0] - 2017-02-27
+
+### Updated
+- Upgrade devDep: autoprefixer, extract-text-webpack-plugin, file-loader, html-loader, eslint-loader, postcss-loader, style-loader, stylelint, ts-loader, tslint-loader, eslint, typescript, css-loader, url-loader, babel-loader, webpack-dev-server, babel-core, webpack-merge and opener.
+
+
 ## [5.5.0] - 2017-02-10
 
 ### Deleted
