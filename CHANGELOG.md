@@ -1,5 +1,14 @@
 # Change Log
 
+## [6.0.0] - 2017-03-09
+
+### Modified
+- Improve colors palette.
+
+### Deleted
+- Remove niduscss utils packages.
+
+
 ## [5.7.0] - 2017-03-09
 
 ### Added

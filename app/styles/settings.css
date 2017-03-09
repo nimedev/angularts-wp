@@ -4,9 +4,29 @@
    ========================================================================== */
 
 :root {
+  /* Colors palette */
+  --App-primary-df: #2196f3;
+  --App-primary-h1: #64b5f6;
+
+  --App-accent-df: #ffab40;
+  --App-accent-h1: #ffd180;
+
+  --App-warn-df: #f44336;
+
+  --App-success-df: #00d1ac;
+
+  --App-black: rgb(0, 0, 0);
+  --App-superdark: color(var(--App-black) l(10%));
+  --App-darkergrey: color(var(--App-black) l(15%));
+  --App-darkgrey: color(var(--App-black) l(25%));
+  --App-grey: color(var(--App-black) l(50%));
+  --App-lightgrey: color(var(--App-black) l(90%));
+  --App-lightergrey: color(var(--App-black) l(98%));
+  --App-white: rgb(255, 255, 255);
+
   /* Base styles */
-  --App-background: #f5f5f5;
-  --App-textcolor: #262626;
+  --App-background: var(--App-lightgrey);
+  --App-textcolor: var(--App-superdark);
   --App-basefont: Lato, Helvetica, "Roboto Slab", "Droid Serif", "Segoe UI Bold", sans-serif;
   --App-backdrop: rgba(33, 33, 33, 0.48);
   --App-backdrop-white: rgba(224, 224, 224, 0.85);
@@ -33,39 +53,6 @@
   --App-fs-huge: 2.125rem;
   --App-fs-extreme: 2.8125rem;
   --App-fs-xextreme: 3.5rem;
-
-  /**
-    * Material themming
-    * Default material shadows:
-    * - Primary and warning colors: (500, 300, 800 and A100)
-    * - Accent colors: (A200, A100, A400 and A700)
-    * Use: choose a palette for primary, accent and warn category then
-    * use a map to set de shadows (default, hue1, hue2 and hue3).
-    */
-  --App-primary-df: #2196f3;
-  --App-primary-h1: #64b5f6;
-  --App-primary-h2: #1565c0;
-  --App-primary-h3: #82b1ff;
-
-  --App-accent-df: #ffab40;
-  --App-accent-h1: #ffd180;
-  --App-accent-h2: #ff9100;
-  --App-accent-h3: #ff6d00;
-
-  --App-warn-df: #f44336;
-  --App-warn-h1: #e57373;
-  --App-warn-h2: #c62828;
-  --App-warn-h3: #ff8a80;
-
-  /* Grayscale */
-  --App-black: rgb(0, 0, 0);
-  --App-superdark: color(var(--App-black) l(10%));
-  --App-darkergrey: color(var(--App-black) l(15%));
-  --App-darkgrey: color(var(--App-black) l(25%));
-  --App-grey: color(var(--App-black) l(50%));
-  --App-lightgrey: color(var(--App-black) l(90%));
-  --App-lightergrey: color(var(--App-black) l(98%));
-  --Appwhite: rgb(255, 255, 255);
 
   /* Form elements */
   --Form-textcolor: var(--App-textcolor);

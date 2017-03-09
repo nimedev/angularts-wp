@@ -19,16 +19,5 @@
 @import "niduscss-elements-link";
 @import "niduscss-elements-typography";
 
-/* Niduscss utilities
-   ========================================================================== */
-
-@import "niduscss-utils-align";
-@import "niduscss-utils-buttons";
-@import "niduscss-utils-color";
-@import "niduscss-utils-flex";
-@import "niduscss-utils-shadow";
-@import "niduscss-utils-state";
-@import "niduscss-utils-text";
-
 /* Shared styles
    ========================================================================== */
