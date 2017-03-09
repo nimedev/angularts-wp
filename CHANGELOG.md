@@ -1,5 +1,15 @@
 # Change Log
 
+## [5.7.0] - 2017-03-09
+
+### Added
+- Use webpack-parts-nimedev to config webpack.
+
+### Updated
+- Upgrade dep: angular.
+- Uprade devDep: autoprefixer, eslint, ip, tslint and webpack-merge.
+
+
 ## [5.6.0] - 2017-02-27
 
 ### Updated
