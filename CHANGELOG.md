@@ -1,5 +1,11 @@
 # Change Log
 
+## [6.2.0] - 2017-03-09
+
+### Modified
+- Use webpack-kit-nimedev-ts to config webpack.
+
+
 ## [6.1.1] - 2017-03-09
 
 ### Fixed
