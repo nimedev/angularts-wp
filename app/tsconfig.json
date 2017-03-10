@@ -1,10 +1,16 @@
 {
   "compilerOptions": {
-    "lib": ["es2015", "dom"],
+    "lib": [
+      "es2015",
+      "dom"
+    ],
     "noUnusedLocals": true,
     "rootDir": ".",
     "target": "es5",
     "sourceMap": true,
     "allowJs": true
-  }
+  },
+  "exclude": [
+    "typings"
+  ]
 }

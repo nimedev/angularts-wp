@@ -3,6 +3,7 @@
  * @module app.module
  */
 
+import * as angular from 'angular'
 import appComponent from './app.component'
 
 /**

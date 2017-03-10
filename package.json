@@ -47,6 +47,7 @@
     "niduscss-elements-typography": "1.1.2"
   },
   "devDependencies": {
+    "@types/angular": "1.6.7",
     "autoprefixer": "6.7.6",
     "babel-core": "6.23.1",
     "babel-eslint": "7.1.1",

@@ -4,7 +4,7 @@
  */
 /// <reference path="./typings/index.d.ts" />
 
-import 'angular'
+import * as angular from 'angular'
 
 // Import assets to bundle with webpack
 import './favicon.ico'

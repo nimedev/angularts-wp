@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@types/angular@1.6.7":
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/@types/angular/-/angular-1.6.7.tgz#8935a2b4a796fe7ca4f59f533f467804722fb0c4"
+  dependencies:
+    "@types/jquery" "*"
+
+"@types/jquery@*":
+  version "2.0.40"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-2.0.40.tgz#acdd69e29b74cdec15dc3c074bcb064bc1b87213"
+
 JSONStream@^0.8.4:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-0.8.4.tgz#91657dfe6ff857483066132b4618b62e8f4887bd"

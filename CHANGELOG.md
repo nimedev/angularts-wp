@@ -1,5 +1,11 @@
 # Change Log
 
+## [6.1.0] - 2017-03-09
+
+### Modified
+- Use npm @types/angular instead angular and jquery typings.
+
+
 ## [6.0.0] - 2017-03-09
 
 ### Modified
