@@ -1,5 +1,11 @@
 # Change Log
 
+## [6.1.1] - 2017-03-09
+
+### Fixed
+- Update package version.
+
+
 ## [6.1.0] - 2017-03-09
 
 ### Modified

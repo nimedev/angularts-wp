@@ -1,6 +1,6 @@
 {
   "name": "angularts-wp",
-  "version": "6.0.0",
+  "version": "6.1.1",
   "description": "A starting point for building web applications with AngularJS 1.6 using TypeScript, Webpack and PostCSS",
   "scripts": {
     "build": "export NODE_ENV='production' && webpack --env.target production",
