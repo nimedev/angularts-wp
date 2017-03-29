@@ -1,5 +1,11 @@
 # Change Log
 
+## [6.2.1] - 2017-03-29
+
+### Updated
+- Upgrade devDep: @types/angular, autoprefixer, babel-core, babel-eslint, babel-preset-es2015, eslint, typescript, webpack, webpack-dev-server and webpack-merge.
+
+
 ## [6.2.0] - 2017-03-09
 
 ### Modified
