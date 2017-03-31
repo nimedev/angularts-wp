@@ -1,5 +1,12 @@
 # Change Log
 
+## [6.2.2] - 2017-03-31
+
+### Updated
+- Upgrade dep: angular.
+- Upgrade devDep: @types/angular and eslint.
+
+
 ## [6.2.1] - 2017-03-29
 
 ### Updated
